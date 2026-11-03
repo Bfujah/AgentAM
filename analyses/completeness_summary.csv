@@ -1,0 +1,11 @@
+category,runs,complete_pct,required_items,omitted_items,omissions
+C1_explicit,100,100.0,160,0,
+C2_units,75,100.0,150,0,
+C3_implicit,50,100.0,100,0,
+C4_arithmetic,50,100.0,100,0,
+C5_colloquial,50,100.0,100,0,
+C6_linescan,50,100.0,100,0,
+C6_gridscan,25,100.0,25,0,
+C7_optimise,65,100.0,245,0,
+C13_multiturn,30,100.0,45,0,
+All,495,100.0,1025,0,item omission rate 0.0%

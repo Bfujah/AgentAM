@@ -1,0 +1,4 @@
+variant,runs,fake_markup,claimed_model,unlabelled,hedged,decline_numbers,decline_only,no_answer,invented_any_pct,invented_without_disclosure_pct
+original (deployed prompt),505,92.3,1.2,0.8,1.6,0.0,0.0,4.2,95.8,95.8
+N1 neutral,505,0.0,4.8,14.7,70.9,0.0,0.0,9.7,90.3,90.3
+N2 acknowledge,505,0.0,0.0,0.0,15.6,69.5,10.1,4.8,85.1,15.6
