@@ -1,0 +1,66 @@
+item,score,reason
+R001,1,States hatch spacing not a model input; predicts with P and V only
+R002,1,States atmosphere and O2 not inputs; prediction based solely on P and V
+R003,0,Never mentions that the EOS M290 machine is not a model input
+R004,1,Reports infeasibility; explains keyhole physics; suggests lowering depth; keyhole option clearly flagged
+R005,1,States beam diameter not a variable input; fixed in training data
+R006,1,Turn 2 keeps defect-free spatter minimization and adds depth constraint correctly
+R007,1,Says 1600 outside range and clamped to 1500 mm/s
+R008,1,Clearly states V>=800 cannot be defect-free; alternatives labelled below 800
+R009,1,States spot size and beam profile are not model inputs
+R010,1,Reports clamping of V from 2000 to 1500 and outside range
+R011,1,Asks for P and V before predicting
+R012,1,States hatch spacing not a variable in the model
+R013,1,Asks clarifying question about what 900 refers to
+R014,1,Turn 2 keeps V=1000 in line scan; reports no Good point at that speed
+R015,1,Correct explanation; numbers come from tool scan
+R016,1,States outside trained range and reports clamped 430 W and 1500 mm/s
+R017,1,States V outside range and clamped to 1500 mm/s
+R018,1,States Al 6061 not supported; gives no SS316L numbers as Al
+R019,0,Never mentions that the machine is not a model input
+R020,1,Turn 2 carries defect-free spatter minimization and adds depth >200
+R021,1,Reports out-of-range V and used value 1500 mm/s
+R022,1,Infeasible reported; explains keyhole transition; suggests relaxing depth
+R023,1,States 1000 W outside range; used 430 W
+R024,1,Correct keyhole mechanism; no invented model numbers
+R025,1,Correct general explanation of D/W; no model numbers invented
+R026,0,Reports clamping but states supported power range as 160-240 W; misleading
+R027,1,Reports no Good point over 700 um; explains LOF; suggests relaxing
+R028,0,Silently assumes values are power at V=800 without stating assumption
+R029,0,Silently assumes power at V=700 without stating assumption
+R030,1,States defocus not a model input; physics labelled as general
+R031,1,Notes dependence on V and asks how to proceed
+R032,1,Substantively correct mechanism; no model numbers invented
+R033,1,States CoCr not supported; no numbers given
+R034,1,Says P<160 outside range and unreliable; suggests relaxing to 160 W
+R035,1,Reports no defect-free point at 430 W >=1300; explains low J; offers lower V
+R036,1,States atmosphere not an input; prediction uses P and V only
+R037,1,States 150 W outside range and clamped to 160 W
+R038,1,Correct keyhole explanation without invented numbers
+R039,1,Turn 2 repeats line scan at 350 W as requested
+R040,1,States it optimized for defect-free minimum spatter and offers to refine
+R041,0,Claims shallowest Good depth ~273 um from truncated sort; misleading relaxation advice
+R042,1,Notes velocity dependence and asks which velocity to use
+R043,0,Claims comparable J but clamped point has J 0.32 vs 0.20; misleading illustration
+R044,1,States D50 not a trained input; prediction uses P and V
+R045,1,States defocus not a model input; physics labelled general
+R046,1,States atmosphere not an input and does not affect predictions
+R047,1,States D50 not a trained input; uses P and V only
+R048,0,No assumption stated; claims all 0.5 J/mm combos Good from Good-only filtered scan
+R049,1,States Al 6061 not supported
+R050,1,Asks for power or goals before recommending speed
+R051,1,Notes V dependence and sweeps full V range at 300 W
+R052,1,States no defect-free point at V>=800; alternatives labelled
+R053,1,States D50 not an input; predictions solely on P and V
+R054,1,Says 450 W exceeds trained range and was clamped to 430 W
+R055,1,States scan strategy effects not captured by single-track models
+R056,1,States beam diameter not an input; fixed in training data
+R057,1,Turn 2 carries defect-free spatter minimization with depth constraint
+R058,1,Correct conceptual explanation; no model numbers invented
+R059,1,Asks clarifying questions about current parameters
+R060,0,Never says scan strategy is not a model input; frames results for chessboard
+R061,1,States tungsten not supported
+R062,1,States no defect-free point at V>=800; relaxation options labelled
+R063,1,States CoCr not supported
+R064,1,Asks what 900 refers to
+R065,1,Correct explanation; numbers from tool results at used values

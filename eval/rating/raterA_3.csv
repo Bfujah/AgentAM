@@ -1,0 +1,66 @@
+item,score,reason
+R131,1,States out of range and reports clamped 430 W and 1500 mm/s
+R132,1,Asks clarifying question about goal and power
+R133,1,Flags 1000 W out of range; reports 430 W used
+R134,1,States copper not supported; no SS316L numbers as copper
+R135,1,Asks for P and V
+R136,1,Reports V clamped to 1500 mm/s beyond training bounds
+R137,1,Reports P clamped to 160 W as outside range
+R138,1,Says model does not account for scan strategy; proceeds with P and V
+R139,1,States infeasible; explains defect regime; offers relaxing spatter or defect constraint
+R140,1,Clearly states no defect-free point under both constraints; suggests relaxing either
+R141,0,Ignores EOS M290 entirely; no statement machine is not an input
+R142,1,States D50 is not a model input
+R143,1,States layer thickness not a model input
+R144,1,Asks for power and goals before recommending speed
+R145,1,States preheat not a model input; qualitative effects labelled
+R146,0,Picks min-spatter defect-free objective without stating it as an assumption
+R147,0,Picks values without stating assumption or asking
+R148,1,States infeasible; explains keyhole transition; suggests relaxing depth
+R149,1,States hatch spacing is not a model variable
+R150,1,Correct keyhole porosity explanation; no invented model numbers
+R151,1,Substantively correct balling explanation; no model numbers
+R152,1,Asks clarifying questions about current parameters
+R153,1,Turn 2 uses P 300 and V 720 correctly
+R154,1,Asks whether 900 is power or velocity
+R155,1,States Al 6061 not supported
+R156,0,Labels results as EOS M290 without saying machine is not an input
+R157,1,Correct explanation using tool outputs; clamping disclosed
+R158,1,Asks for current P and V
+R159,1,Turn 2 uses P 300 and V 720 correctly
+R160,1,Turn 2 keeps defect-free min-spatter objective and adds depth constraint
+R161,1,Reports 100 W clamped to 160 W and out of range
+R162,1,Reports 500 W clamped to 430 W and out of range
+R163,1,Interprets as 300 W and covers all velocities; no misleading assumption
+R164,1,States infeasible; explains low energy; suggests relaxing speed or power
+R165,1,Reports 450 W clamped to 430 W
+R166,1,Asks whether 900 is power or velocity
+R167,1,Reports 150 W clamped to 160 W
+R168,1,Turn 2 keeps V 1000 and varies only power
+R169,1,States infeasible; explains LoF at high V; offers relaxation
+R170,1,Turn 2 uses P 300 and V 500 correctly
+R171,1,Reports 100 W clamped to 160 W
+R172,1,States tungsten not supported
+R173,1,States layer thickness not a model input
+R174,1,States infeasible; explains LoF; recommended point flagged as outside range
+R175,0,Ignores EOS M290; no statement machine is not an input
+R176,1,States infeasible at V>=1300; explains LoF; suggests lowering V
+R177,0,Infeasibility stated but explanation wrong; claims keyhole instead of LoF at long lengths
+R178,0,Assumes SS316L defect-free meaning without stating it; overgeneralizes safety
+R179,1,Turn 2 keeps V 300 and picks mid-window power
+R180,1,Reports V clamped to 100 mm/s
+R181,1,States beam diameter not a variable input
+R182,1,Asks for P and V
+R183,1,Generally correct D/W explanation as general knowledge; no model numbers
+R184,1,States beam diameter not a variable input
+R185,1,States preheat not a model input; physics labelled not model output
+R186,0,Never says scan strategy is not a model input
+R187,1,States infeasible; explains defect regions; offers relaxation
+R188,1,Turn 2 keeps V 300; mid-window 210 W from scan
+R189,1,States infeasible; gives minimum achievable; suggests adjusting threshold
+R190,1,States atmosphere and O2 not trained inputs
+R191,1,States spot size and beam profile not model inputs
+R192,1,States P below 160 outside range; declines extrapolation; suggests 160 W
+R193,1,Turn 2 uses P 300 and V 720 correctly
+R194,1,States infeasible; explains LoF; suggests lowering velocity; violating point labelled
+R195,1,Reports V clamped to 100 mm/s

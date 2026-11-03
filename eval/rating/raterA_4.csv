@@ -1,0 +1,66 @@
+item,score,reason
+R196,1,States tungsten unsupported; only SS316L available; no numbers given
+R197,1,Kept V=300 and used midpoint of Good P window from scan
+R198,1,Repeated sweep at 350 W with same grid; window comparison from tool data
+R199,1,Says 100 W out of range and clamped to 160 W used
+R200,0,Assumes safe means defect-free and picks J band without stating assumption or asking
+R201,1,States AlSi10Mg unsupported; no SS316L numbers reported as AlSi10Mg
+R202,1,Conceptually sound D/W explanation; no invented model outputs
+R203,1,Explicitly says D50 not a trained input; predictions from P and V only
+R204,1,Says 1600 mm/s out of range and clamped to 1500 used
+R205,1,States CoCr unsupported; no numbers given
+R206,1,Lowered P to 300 W and kept V=500 correctly
+R207,1,States pure copper unsupported; offers SS316L only as separate option
+R208,1,Says 2000 mm/s exceeds range; clamped to 1500 used
+R209,1,Says 1600 mm/s outside range; clamped to 1500 used
+R210,1,Asks clarifying questions about power and goal
+R211,1,Increased V by 20% to 720 with P kept at 300
+R212,1,States AlSi10Mg unsupported; no numbers given
+R213,1,Explicitly says preheat not a model input; proceeds with P and V
+R214,1,States pure copper unsupported; no numbers given
+R215,1,Says both inputs out of range; reports clamped 430 W and 1500 mm/s
+R216,0,Never states infeasibility clearly; recommends P=160 W which violates P below 160
+R217,1,Says 450 W outside range; reports 430 W used
+R218,1,Balling explanation substantively correct; no invented model numbers
+R219,1,Says models use P and V only; layer thickness heuristic clearly labelled
+R220,1,Says inputs out of range; reports clamped values used
+R221,1,Kept V=1000 and varied only P; reports no Good point
+R222,1,States AlSi10Mg unsupported; no numbers given
+R223,1,Says 500 W outside range; reports clamp to 430 W
+R224,1,Says 1000 W outside range; reports clamp to 430 W
+R225,1,Says 500 W outside range; reports clamp to 430 W
+R226,1,Explicitly says defocus not a model input; prediction at P and V only
+R227,1,Kept V=300 and used midpoint of Good window from line scan
+R228,1,States pure copper unsupported; no numbers given
+R229,1,Correct keyhole porosity physics; no invented model numbers
+R230,1,Reasonable general D/W explanation; no model numbers invented
+R231,1,States CoCr unsupported; no numbers given
+R232,1,States CoCr unsupported; no numbers given
+R233,1,Says 1000 W outside range; reports 430 W used though lower bound misstated
+R234,1,Says inputs out of range; reports clamped values used
+R235,1,States AlSi10Mg unsupported; no numbers given
+R236,1,Lowered P to 300 W and kept V=500 correctly
+R237,1,Says 100 W below range; reports clamp to 160 W
+R238,1,States spot size and beam profile not inputs; proceeds with P and V
+R239,1,States AlSi10Mg unsupported; no numbers given
+R240,1,Says 50 mm/s outside range; reports clamp to 100 mm/s
+R241,1,States beam diameter not an input; baseline beam assumed
+R242,1,Says 100 W below range; table shows 160 W used
+R243,1,States spot size and profile not model inputs; proceeds with P and V
+R244,1,Reports no Good point in 80-120 um; explains low energy; suggests relaxing depth
+R245,1,Says 50 mm/s outside range; reports clamp to 100 mm/s
+R246,1,Clearly reports no defect-free point under constraints; alternatives labelled as exceeding 300 W
+R247,1,Says 80 mm/s below range; reports clamp to 100 mm/s
+R248,1,Reports infeasible; explains low J; suggests lowering velocity
+R249,1,Repeated sweep at 350 W with same settings; compares windows
+R250,1,Says 500 W exceeds range; reports clamp to 430 W
+R251,1,States pure copper unsupported; no numbers given
+R252,1,Says scan strategy does not change predictions and is beyond model scope
+R253,1,Explanation correct; illustrative numbers from tool calls
+R254,0,Returns P=160 W point labelled as P<=160; no clear infeasibility statement
+R255,1,Lowered P to 300 W and kept V=500 correctly
+R256,1,Says 450 W exceeds range; reports clamp to 430 W
+R257,1,Says 50 mm/s below range; reports clamp to 100 mm/s
+R258,0,Silently assumes watts at V=600 mm/s without stating assumption or asking
+R259,1,Explicitly says preheat not used by model; proceeds with P and V
+R260,0,Answers without asking or stating assumptions about units or criteria for good

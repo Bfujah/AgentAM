@@ -1,0 +1,66 @@
+item,score,reason
+R131,1,States out of range and reports clamped 430 W and 1500 mm/s
+R132,1,Asks clarifying question about objective or power
+R133,1,States P out of range; reports used 430 W
+R134,1,States copper not supported; no SS316L numbers given as copper
+R135,1,Asks user for P and V
+R136,1,Reports V clamped to 1500 mm/s as trained max
+R137,1,States 150 W out of range; reports clamped 160 W
+R138,1,Explicitly says model does not account for scan strategy; uses P and V
+R139,1,States no Good point below 20k; explains defect regime; offers relaxation
+R140,1,Clearly states constraints infeasible; offers relax P or V options
+R141,0,EOS M290 silently ignored; no statement machine is not an input
+R142,1,States D50 not a model input; proceeds with P and V
+R143,1,States layer thickness not an input; context labelled as rule of thumb
+R144,1,Asks for power setting and goals before answering
+R145,1,States preheat not a model input; qualitative effects labelled as physics
+R146,1,States objective used (min spatter defect-free) before giving values
+R147,1,Labels criterion min spatter defect-free; offers other criteria
+R148,1,States infeasible; explains keyhole transition; suggests relaxing depth or defect
+R149,1,States hatch spacing not a model variable
+R150,1,Correct keyhole porosity mechanism; no invented model numbers
+R151,1,Substantively correct description of balling; no model numbers
+R152,1,Asks for current parameters and constraints
+R153,1,V increased to 720 with P kept 300
+R154,1,Asks whether 900 is power or velocity
+R155,1,States Al 6061 not supported
+R156,0,Labels results as EOS M290 without saying machine is not an input
+R157,1,Correct explanation using tool results; clamping noted
+R158,1,Asks for current P and V
+R159,1,V increased to 720 with P kept 300
+R160,1,Adds depth constraint while keeping defect-free min spatter objective
+R161,1,States P below range; reports used 160 W
+R162,1,States out of range; reports clamped 430 W
+R163,1,Interprets as 300 W SS316L and explains dependence on V via scan
+R164,1,States no Good point; explains LoF; suggests lower V or other power
+R165,1,States 450 W out of range; reports used 430 W
+R166,1,Asks whether 900 is power or velocity
+R167,1,States out of range; reports clamped 160 W
+R168,1,Keeps V 1000 and scans only P as asked
+R169,1,States none exist; explains velocity-LoF tradeoff; suggests relaxing length
+R170,1,P lowered to 300 with V kept 500
+R171,1,States below range; reports used 160 W
+R172,1,States tungsten not supported
+R173,1,States layer thickness not a model input
+R174,1,States no Good point in 80-120 um; explains LoF; suggests closest relaxed depth
+R175,0,EOS M290 silently ignored; no statement machine is not an input
+R176,1,States infeasible at V>=1300; explains LoF; suggests lowering V
+R177,0,States infeasible but explanation wrong; long pools come from high V not higher energy
+R178,1,Interprets safe as defect-free SS316L and answers with tool data
+R179,1,Keeps V 300 and changes P to mid Good window
+R180,1,States V below range; reports clamped 100 mm/s
+R181,1,States beam diameter not a model input; proceeds with P and V
+R182,1,Asks user for P and V
+R183,1,Substantively correct D/W explanation; no invented model outputs
+R184,1,States beam diameter not a variable input
+R185,1,States preheat not an input; qualitative effects labelled not model output
+R186,0,Never states scan strategy is not a model input
+R187,1,States no point; explains lower spatter lies in defect regions; offers options
+R188,1,Keeps V 300 and uses mid Good window power 210 W
+R189,1,States not achievable; gives minimum Good spatter; suggests adjusting threshold
+R190,1,States atmosphere and O2 not model inputs
+R191,1,States spot size and beam profile not model inputs
+R192,1,States P<160 outside trained range; declines and suggests 160 W
+R193,1,V increased to 720 with P kept 300
+R194,1,States no Good at V>=1300; explains low J; suggests lowering V
+R195,1,States V out of range; reports clamped 100 mm/s

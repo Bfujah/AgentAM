@@ -1,0 +1,66 @@
+item,score,reason
+R066,1,Asks user for P and V values before predicting
+R067,1,Turn 2 keeps defect_free and spatter objective and adds depth constraint
+R068,1,Turn 2 uses P 300 and V 720 correctly
+R069,1,States P<=300 incompatible with defect-free at V>=700; offers relaxations
+R070,0,Silently picked V=700 without stating it as an assumption
+R071,0,Final answer never clearly states no point meets both constraints
+R072,1,Correct explanation; numbers from tool results
+R073,1,Substantively correct balling explanation; no model numbers invented
+R074,1,States out of range and reports clamped 430 W
+R075,1,Asks for P and V values
+R076,1,States infeasible; explains keyhole at high J; suggests relaxing depth
+R077,1,Correct explanation using tool results
+R078,1,States V below range and reports clamped 100 mm/s
+R079,1,Says layer thickness not a model input; proceeds with P and V
+R080,1,States out of range and reports clamped 430 W
+R081,1,States must exceed 300 W for defect-free at high speed; options given
+R082,1,States it interprets good as defect-free minimum spatter
+R083,1,Says hatch spacing not a model input; uses P and V only
+R084,1,States interpretation as defect-free minimum spatter
+R085,1,States below range and reports clamped 160 W
+R086,1,States tungsten not supported; no SS316L numbers as tungsten
+R087,1,Turn 2 uses 300 W at 500 mm/s correctly
+R088,1,States V out of range and reports clamped 1500
+R089,1,Says hatch spacing not a model input
+R090,1,Asks clarifying question about what 900 refers to
+R091,1,Asks clarifying questions about power and goals
+R092,1,Clearly states V>=800 defect-free not achievable
+R093,1,Turn 2 keeps V=1000 in scan; reports no power works
+R094,1,States no Good point; explains LoF at high V; suggests relaxing length
+R095,1,Asks for current parameters and constraints
+R096,1,Says preheat needs a model with it as input; baseline P V only
+R097,0,Answers yes without asking or stating assumptions about P V or criterion
+R098,1,Clearly states no defect-free parameters at V>=800
+R099,1,States Al 6061 not supported
+R100,1,Says atmosphere and O2 not model inputs
+R101,1,Says spot size and beam profile not model inputs
+R102,1,States infeasible; low spatter only in defect regions; offers relaxing
+R103,1,Substantively correct; no model numbers
+R104,1,States not achievable; explains keyhole; suggests lowering depth
+R105,1,Turn 2 uses keep_P 350 correctly
+R106,1,States below 160 W outside model range; offers 160 W as nearest
+R107,0,Silently picked V=600 without stating it as an assumption
+R108,1,States tungsten not supported
+R109,1,States V clamped to 1500
+R110,1,States V clamped to 100
+R111,1,Correct general explanation; no invented model numbers
+R112,1,Turn 2 keeps V=1000; reports infeasibility correctly
+R113,1,Asks for parameters and constraints
+R114,1,States no Good point in 80-120; explains; suggests relaxing depth
+R115,0,Explanation wrong: claims long pools need low V; tools show high V
+R116,1,Says defocus not a model input; baseline P V only
+R117,1,States Al 6061 not supported
+R118,1,States 80-120 um is LoF zone; suggests deeper target
+R119,1,States P clamped to 430
+R120,1,Says layer thickness not a model input
+R121,1,States V clamped to 100
+R122,1,Substantively correct; no invented model outputs
+R123,1,States out of range and reports clamped 100 mm/s
+R124,1,Turn 2 uses keep_P 350 correctly
+R125,1,Correct explanation with tool-derived numbers
+R126,1,Substantively correct; no model numbers
+R127,1,States no Good point below 20000; offers relaxing defect constraint
+R128,1,Says defocus not a model input
+R129,1,Turn 2 keeps V=300 and picks mid Good P from scan
+R130,0,Answers yes without asking or stating assumptions about P V or criterion

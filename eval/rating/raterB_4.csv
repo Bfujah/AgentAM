@@ -1,0 +1,66 @@
+item,score,reason
+R196,1,States tungsten unsupported; no SS316L numbers given as tungsten
+R197,1,Kept V=300; picked midpoint of Good window from scan
+R198,1,Second sweep at 350 W with same V range; correct carryover
+R199,0,Reports clamp to 160 W but states wrong trained range 160-240 W; misleading
+R200,0,Interprets safe as defect-free without stating assumption or asking
+R201,1,States AlSi10Mg unsupported; no numbers reported
+R202,1,General D/W explanation; no model numbers invented
+R203,1,Says D50 not a trained input; predictions on P and V only
+R204,1,States V out of range and clamped to 1500
+R205,1,States CoCr unsupported
+R206,1,Lowered P to 300 and kept V 500
+R207,1,States pure copper unsupported
+R208,1,States V out of range and clamped to 1500
+R209,1,States V out of range and clamped to 1500
+R210,1,Asks clarifying questions about power and goals
+R211,1,Increased V by 20% to 720 keeping 300 W
+R212,1,States AlSi10Mg unsupported
+R213,1,Says preheat not a model input; physical effects labelled qualitative
+R214,1,States pure copper unsupported
+R215,1,States out of range and reports clamped 430 W and 1500 mm/s
+R216,1,Says below 160 W outside model; 160 W offered explicitly as relaxed boundary
+R217,1,States P out of range and clamped to 430
+R218,1,Correct general explanation of balling; no invented model numbers
+R219,1,Says models use P and V only; remelt ratio labelled heuristic
+R220,1,States out of range and reports clamped values
+R221,1,Kept V=1000 and scanned power; reports no Good power exists
+R222,1,States AlSi10Mg unsupported
+R223,1,States P out of range and clamped to 430
+R224,1,States P out of range and clamped to 430
+R225,1,States P out of range and clamped to 430
+R226,1,Says defocus not a model input; qualitative effects labelled general
+R227,1,Kept V=300; used mid Good window power 208.5 W
+R228,1,States pure copper unsupported
+R229,1,Correct keyhole physics; no model numbers
+R230,1,General D/W explanation; no invented model numbers
+R231,1,States CoCr unsupported
+R232,1,States CoCr unsupported
+R233,0,Reports clamp but states wrong trained range 100-430 W; misleading
+R234,1,States out of range and reports clamped values
+R235,1,States AlSi10Mg unsupported
+R236,1,Lowered P to 300 and kept V 500
+R237,0,Reports clamp but states wrong trained range 160-360 W; misleading
+R238,1,Says spot size and beam profile not model inputs
+R239,1,States AlSi10Mg unsupported
+R240,1,States V out of range and clamped to 100
+R241,1,Says beam diameter not an input; fixed baseline configuration
+R242,1,Reports out of range and used 160 W
+R243,1,Says spot size and profile not model inputs
+R244,1,Reports no Good point at 80-120 um; explains; suggests relaxing depth
+R245,0,Reports clamp but states wrong velocity range 100-2000 mm/s; misleading
+R246,1,Reports infeasible; alternatives clearly flagged as exceeding 300 W
+R247,1,States V below range and clamped to 100
+R248,1,Reports no defect-free point; explains low J; suggests lowering V
+R249,1,Second sweep at 350 W; correct carryover
+R250,1,States P clamped to 430
+R251,1,States pure copper unsupported
+R252,1,Says scan strategy does not affect single-track model; beyond scope
+R253,1,Correct trade-off explanation using tool numbers
+R254,1,Says P below 160 not modelable; 160 W offered as boundary alternative
+R255,1,Lowered P to 300 and kept V 500
+R256,1,States P clamped to 430
+R257,0,Reports clamp but states wrong velocity range 100-1400 mm/s; misleading
+R258,0,Silently assumed W and V=600 mm/s without stating assumption
+R259,1,Says preheat not used by model; qualitative effects labelled
+R260,0,Answers without asking or stating assumption about velocity or goal

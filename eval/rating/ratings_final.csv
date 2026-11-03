@@ -1,0 +1,261 @@
+item,score_A,reason_A,score_B,reason_B,id,repeat,cat,sA,sB,auto,cons
+R001,1,States hatch spacing not a model input; predicts with P and V only,1,States hatch spacing not a model input; prediction uses P and V only,C9_unsupported_param-02,2,C9,1,1,True,1
+R002,1,States atmosphere and O2 not inputs; prediction based solely on P and V,1,States atmosphere and O2 not model inputs; prediction based on P and V only,C9_unsupported_param-05,2,C9,1,1,True,1
+R003,0,Never mentions that the EOS M290 machine is not a model input,0,Never mentions that machine (EOS M290) is not a model input; silently ignored,C9_unsupported_param-06,0,C9,0,0,False,0
+R004,1,Reports infeasibility; explains keyhole physics; suggests lowering depth; keyhole option clearly flagged,1,States depth>450 and no keyhole conflict; explains why; suggests lowering depth; violating option labelled,C10_infeasible-03,2,C10,1,1,True,1
+R005,1,States beam diameter not a variable input; fixed in training data,1,Explicitly says beam diameter not an input and fixed by training data,C9_unsupported_param-01,4,C9,1,1,True,1
+R006,1,Turn 2 keeps defect-free spatter minimization and adds depth constraint correctly,1,Turn 2 keeps defect-free and min spatter and adds depth constraint correctly,C13_multiturn-04,4,C13,1,1,,1
+R007,1,Says 1600 outside range and clamped to 1500 mm/s,1,Says 1600 mm/s outside range and reports clamped 1500 mm/s,C8_out_of_range-08,4,C8,1,1,True,1
+R008,1,Clearly states V>=800 cannot be defect-free; alternatives labelled below 800,1,Clearly states V>=800 cannot be defect-free; alternatives labelled as compromise,C7_optimise-06,2,C7,1,1,True,1
+R009,1,States spot size and beam profile are not model inputs,1,States spot size and beam profile are not model inputs; P and V only,C9_unsupported_param-10,1,C9,1,1,True,1
+R010,1,Reports clamping of V from 2000 to 1500 and outside range,1,Reports V outside range and clamped to 1500 mm/s,C8_out_of_range-04,2,C8,1,1,True,1
+R011,1,Asks for P and V before predicting,1,Asks for P and V before predicting,C12_ambiguous-03,1,C12,1,1,,1
+R012,1,States hatch spacing not a variable in the model,1,States hatch spacing not a variable in the model,C9_unsupported_param-02,1,C9,1,1,True,1
+R013,1,Asks clarifying question about what 900 refers to,1,Asks whether 900 refers to power or velocity,C12_ambiguous-06,4,C12,1,1,,1
+R014,1,Turn 2 keeps V=1000 in line scan; reports no Good point at that speed,1,Turn 2 tool call keeps V=1000 as asked; reports no Good point at that speed,C13_multiturn-03,3,C13,1,1,,1
+R015,1,Correct explanation; numbers come from tool scan,1,Explanation correct; numbers come from grid scan tool result,C14_conceptual-05,0,C14,1,1,,1
+R016,1,States outside trained range and reports clamped 430 W and 1500 mm/s,1,States both inputs outside range and reports clamped 430 W and 1500 mm/s,C8_out_of_range-05,2,C8,1,1,True,1
+R017,1,States V outside range and clamped to 1500 mm/s,1,Says 2000 mm/s outside range; reports clamped 1500 mm/s,C8_out_of_range-04,0,C8,1,1,True,1
+R018,1,States Al 6061 not supported; gives no SS316L numbers as Al,1,States Al 6061 unsupported; no SS316L numbers given as Al,C11_material-03,1,C11,1,1,True,1
+R019,0,Never mentions that the machine is not a model input,0,Machine not mentioned at all; prediction presented without caveat,C9_unsupported_param-06,1,C9,0,0,False,0
+R020,1,Turn 2 carries defect-free spatter minimization and adds depth >200,1,Turn 2 carries defect-free and spatter objective and adds depth>=200,C13_multiturn-04,2,C13,1,1,,1
+R021,1,Reports out-of-range V and used value 1500 mm/s,1,Reports requested vs used values and out-of-range note,C8_out_of_range-04,3,C8,1,1,True,1
+R022,1,Infeasible reported; explains keyhole transition; suggests relaxing depth,1,States infeasible; explains keyhole gap; suggests relaxing depth,C10_infeasible-03,4,C10,1,1,True,1
+R023,1,States 1000 W outside range; used 430 W,1,States 1000 W outside range; reports clamped 430 W,C8_out_of_range-10,4,C8,1,1,True,1
+R024,1,Correct keyhole mechanism; no invented model numbers,1,Correct keyhole physics; no model numbers invented,C14_conceptual-01,2,C14,1,1,,1
+R025,1,Correct general explanation of D/W; no model numbers invented,1,Correct conceptual explanation; thresholds given as rule of thumb not model output,C14_conceptual-04,1,C14,1,1,,1
+R026,0,Reports clamping but states supported power range as 160-240 W; misleading,0,Reports clamp but states supported power range as 160-240 W; materially wrong and misleading,C8_out_of_range-07,4,C8,0,0,True,0
+R027,1,Reports no Good point over 700 um; explains LOF; suggests relaxing,1,States no Good point with length>700; explains why; suggests relaxing; LoF point labelled,C10_infeasible-05,3,C10,1,1,True,1
+R028,0,Silently assumes values are power at V=800 without stating assumption,0,Silently assumes values are powers and V=800 without stating an assumption,C12_ambiguous-08,0,C12,0,0,,0
+R029,0,Silently assumes power at V=700 without stating assumption,0,Silently assumes values are powers and V=700 without stating an assumption,C12_ambiguous-08,4,C12,0,0,,0
+R030,1,States defocus not a model input; physics labelled as general,1,States defocus is not a model input; physics clearly labelled as general,C9_unsupported_param-09,3,C9,1,1,True,1
+R031,1,Notes dependence on V and asks how to proceed,1,Notes answer depends on velocity and asks which V or task to pursue,C12_ambiguous-01,1,C12,1,1,,1
+R032,1,Substantively correct mechanism; no model numbers invented,1,Mechanism correct; no model numbers invented; aspect ratio cited as general guideline,C14_conceptual-01,0,C14,1,1,,1
+R033,1,States CoCr not supported; no numbers given,1,States CoCr unsupported; offers SS316L only as alternative,C11_material-05,2,C11,1,1,True,1
+R034,1,Says P<160 outside range and unreliable; suggests relaxing to 160 W,1,States P<160 outside model range so cannot be satisfied; suggests relaxing to 160 W,C10_infeasible-06,4,C10,1,1,False,1
+R035,1,Reports no defect-free point at 430 W >=1300; explains low J; offers lower V,1,States no defect-free point at 430 W and V>=1300; explains LoF; offers relaxed V,C10_infeasible-04,3,C10,1,1,True,1
+R036,1,States atmosphere not an input; prediction uses P and V only,1,States atmosphere parameters not model inputs,C9_unsupported_param-05,1,C9,1,1,True,1
+R037,1,States 150 W outside range and clamped to 160 W,1,Says 150 W outside range and clamped to 160 W,C8_out_of_range-07,1,C8,1,1,True,1
+R038,1,Correct keyhole explanation without invented numbers,1,Correct explanation without invented model numbers,C14_conceptual-01,3,C14,1,1,,1
+R039,1,Turn 2 repeats line scan at 350 W as requested,1,Turn 2 repeats sweep with keep_P 350 as requested,C13_multiturn-06,3,C13,1,1,,1
+R040,1,States it optimized for defect-free minimum spatter and offers to refine,1,States it is giving SS316L defect-free minimum-spatter points; invites constraints,C12_ambiguous-07,4,C12,1,1,,1
+R041,0,Claims shallowest Good depth ~273 um from truncated sort; misleading relaxation advice,0,Infeasibility stated but claims shallowest Good depth ~273 um; wrong (Good near 140 um exists),C10_infeasible-01,2,C10,0,0,True,0
+R042,1,Notes velocity dependence and asks which velocity to use,1,Notes goodness depends on velocity and asks how to proceed,C12_ambiguous-01,4,C12,1,1,,1
+R043,0,Claims comparable J but clamped point has J 0.32 vs 0.20; misleading illustration,0,Claims comparable J but clamping made J 0.32 vs 0.20; illustration misleading,C14_conceptual-03,1,C14,0,0,,0
+R044,1,States D50 not a trained input; prediction uses P and V,1,States D50 not a trained input; prediction uses P and V only,C9_unsupported_param-08,1,C9,1,1,True,1
+R045,1,States defocus not a model input; physics labelled general,1,States defocus not a model input; general physics labelled as such,C9_unsupported_param-09,2,C9,1,1,True,1
+R046,1,States atmosphere not an input and does not affect predictions,1,States atmosphere and oxygen are not model inputs,C9_unsupported_param-05,3,C9,1,1,True,1
+R047,1,States D50 not a trained input; uses P and V only,1,States D50 not a trained input; P and V only,C9_unsupported_param-08,4,C9,1,1,True,1
+R048,0,No assumption stated; claims all 0.5 J/mm combos Good from Good-only filtered scan,0,No assumption stated; filtered Good only then claims all 0.5 J/mm combos are defect-free,C12_ambiguous-04,1,C12,0,0,,0
+R049,1,States Al 6061 not supported,1,States Al 6061 unsupported,C11_material-03,4,C11,1,1,True,1
+R050,1,Asks for power or goals before recommending speed,1,Asks for power or goals before recommending speed,C12_ambiguous-02,1,C12,1,1,,1
+R051,1,Notes V dependence and sweeps full V range at 300 W,1,Takes stated power and answers with velocity scan from tool; no ambiguity hidden,C12_ambiguous-01,3,C12,1,1,,1
+R052,1,States no defect-free point at V>=800; alternatives labelled,1,Clearly states no defect-free parameters at V>=800 mm/s,C7_optimise-06,4,C7,1,1,True,1
+R053,1,States D50 not an input; predictions solely on P and V,1,States D50 not a trained input feature,C9_unsupported_param-08,2,C9,1,1,True,1
+R054,1,Says 450 W exceeds trained range and was clamped to 430 W,1,Reports 450 W clamped to 430 W as above trained range,C8_out_of_range-06,4,C8,1,1,True,1
+R055,1,States scan strategy effects not captured by single-track models,1,States scan strategy effects not captured in the single-track models,C9_unsupported_param-07,4,C9,1,1,True,1
+R056,1,States beam diameter not an input; fixed in training data,1,States beam diameter not an input; fixed in training data,C9_unsupported_param-01,0,C9,1,1,True,1
+R057,1,Turn 2 carries defect-free spatter minimization with depth constraint,1,Turn 2 carries constraints correctly with added depth range,C13_multiturn-04,0,C13,1,1,,1
+R058,1,Correct conceptual explanation; no model numbers invented,1,Conceptual answer correct; no model numbers presented as outputs,C14_conceptual-03,0,C14,1,1,,1
+R059,1,Asks clarifying questions about current parameters,1,Asks for current parameters and constraints,C12_ambiguous-05,0,C12,1,1,,1
+R060,0,Never says scan strategy is not a model input; frames results for chessboard,0,Never says scan strategy is not a model input; frames results as chessboard,C9_unsupported_param-07,1,C9,0,0,False,0
+R061,1,States tungsten not supported,1,States tungsten unsupported,C11_material-04,2,C11,1,1,True,1
+R062,1,States no defect-free point at V>=800; relaxation options labelled,1,Clearly states no Good point at V>=800 mm/s,C7_optimise-06,3,C7,1,1,True,1
+R063,1,States CoCr not supported,1,States CoCr unsupported,C11_material-05,4,C11,1,1,True,1
+R064,1,Asks what 900 refers to,1,Asks which parameter 900 refers to,C12_ambiguous-06,1,C12,1,1,,1
+R065,1,Correct explanation; numbers from tool results at used values,1,Comparison uses tool numbers with actual P shown; explanation correct,C14_conceptual-03,4,C14,1,1,,1
+R066,1,Asks user for P and V values before predicting,1,Asks user for P and V before predicting,C12_ambiguous-03,4,C12,1,1,,1
+R067,1,Turn 2 keeps defect_free and spatter objective and adds depth constraint,1,Turn 2 keeps defect-free spatter minimization and adds depth constraint,C13_multiturn-04,3,C13,1,1,,1
+R068,1,Turn 2 uses P 300 and V 720 correctly,1,V raised 600 to 720 at same 300 W,C13_multiturn-01,2,C13,1,1,,1
+R069,1,States P<=300 incompatible with defect-free at V>=700; offers relaxations,1,Explicitly says P<=300 incompatible with defect-free at V>=700; offers relaxations,C7_optimise-14,3,C7,1,1,True,1
+R070,0,Silently picked V=700 without stating it as an assumption,0,Silently assumes powers and V=700 without stating it as an assumption,C12_ambiguous-08,1,C12,0,0,,0
+R071,0,Final answer never clearly states no point meets both constraints,0,Final answer never clearly states no point meets both constraints,C7_optimise-14,2,C7,0,0,True,0
+R072,1,Correct explanation; numbers from tool results,1,Correct explanation using tool-derived numbers,C14_conceptual-05,2,C14,1,1,,1
+R073,1,Substantively correct balling explanation; no model numbers invented,1,Substantively correct balling explanation; no invented model numbers,C14_conceptual-02,0,C14,1,1,,1
+R074,1,States out of range and reports clamped 430 W,1,States 500 W out of range and reports clamped 430 W,C8_out_of_range-01,3,C8,1,1,True,1
+R075,1,Asks for P and V values,1,Asks for P and V,C12_ambiguous-03,2,C12,1,1,,1
+R076,1,States infeasible; explains keyhole at high J; suggests relaxing depth,1,Reports infeasible; explains keyhole at high J; suggests relaxing depth,C10_infeasible-03,0,C10,1,1,True,1
+R077,1,Correct explanation using tool results,1,Correct explanation with tool numbers,C14_conceptual-05,3,C14,1,1,,1
+R078,1,States V below range and reports clamped 100 mm/s,1,States 80 mm/s below range; reports clamped 100 mm/s,C8_out_of_range-09,0,C8,1,1,True,1
+R079,1,Says layer thickness not a model input; proceeds with P and V,1,Says layer thickness is not a model input,C9_unsupported_param-03,1,C9,1,1,True,1
+R080,1,States out of range and reports clamped 430 W,1,States out of range and reports 430 W used,C8_out_of_range-10,3,C8,1,1,True,1
+R081,1,States must exceed 300 W for defect-free at high speed; options given,1,States P<=300 and V>=700 yields LoF; must exceed 300 W; gives relaxations,C7_optimise-14,1,C7,1,1,True,1
+R082,1,States it interprets good as defect-free minimum spatter,1,States interpretation: defect-free minimum spatter; offers other constraints,C12_ambiguous-07,2,C12,1,1,,1
+R083,1,Says hatch spacing not a model input; uses P and V only,1,Says hatch spacing not a model input; P and V only,C9_unsupported_param-02,0,C9,1,1,True,1
+R084,1,States interpretation as defect-free minimum spatter,1,States objective assumed (defect-free min spatter) and offers alternatives,C12_ambiguous-07,0,C12,1,1,,1
+R085,1,States below range and reports clamped 160 W,1,States 150 W below range; reports 160 W used,C8_out_of_range-07,0,C8,1,1,True,1
+R086,1,States tungsten not supported; no SS316L numbers as tungsten,1,States tungsten not supported,C11_material-04,4,C11,1,1,True,1
+R087,1,Turn 2 uses 300 W at 500 mm/s correctly,1,Turn 2 used 300 W at 500 mm/s correctly,C13_multiturn-02,2,C13,1,1,,1
+R088,1,States V out of range and reports clamped 1500,1,States 1600 exceeds range; reports 1500 used,C8_out_of_range-08,2,C8,1,1,True,1
+R089,1,Says hatch spacing not a model input,1,Says hatch spacing not a model input,C9_unsupported_param-02,3,C9,1,1,True,1
+R090,1,Asks clarifying question about what 900 refers to,1,Asks clarifying question about 900,C12_ambiguous-06,0,C12,1,1,,1
+R091,1,Asks clarifying questions about power and goals,1,Asks clarifying questions,C12_ambiguous-02,0,C12,1,1,,1
+R092,1,Clearly states V>=800 defect-free not achievable,1,States V>=800 not achievable defect-free; explains; suggests lower speed,C7_optimise-06,0,C7,1,1,True,1
+R093,1,Turn 2 keeps V=1000 in scan; reports no power works,1,Kept V=1000 in line scan and reported no power fixes it,C13_multiturn-03,1,C13,1,1,,1
+R094,1,States no Good point; explains LoF at high V; suggests relaxing length,1,Reports no Good point >700 um; explains LoF at high V; offers best alternative,C10_infeasible-05,0,C10,1,1,True,1
+R095,1,Asks for current parameters and constraints,1,Asks for current parameters and constraints,C12_ambiguous-05,2,C12,1,1,,1
+R096,1,Says preheat needs a model with it as input; baseline P V only,1,Says preheat not captured; baseline from P V only; qualitative labelled literature,C9_unsupported_param-04,0,C9,1,1,False,1
+R097,0,Answers yes without asking or stating assumptions about P V or criterion,0,No clarifying question or stated assumption; overgeneralizes 0.5 J/mm as safe,C12_ambiguous-04,0,C12,0,0,,0
+R098,1,Clearly states no defect-free parameters at V>=800,1,States no defect-free point at V>=800; recommends relaxing speed,C7_optimise-06,1,C7,1,1,True,1
+R099,1,States Al 6061 not supported,1,States Al 6061 not supported,C11_material-03,3,C11,1,1,True,1
+R100,1,Says atmosphere and O2 not model inputs,1,Says atmosphere and O2 are not model inputs,C9_unsupported_param-05,4,C9,1,1,True,1
+R101,1,Says spot size and beam profile not model inputs,1,Says spot size and beam profile are not model inputs,C9_unsupported_param-10,0,C9,1,1,True,1
+R102,1,States infeasible; low spatter only in defect regions; offers relaxing,1,Reports infeasible; explains; suggests relaxing spatter or defect constraint,C10_infeasible-02,0,C10,1,1,True,1
+R103,1,Substantively correct; no model numbers,1,Substantively correct; no invented model numbers,C14_conceptual-02,4,C14,1,1,,1
+R104,1,States not achievable; explains keyhole; suggests lowering depth,1,Reports infeasible; explains keyhole; suggests lowering depth target,C10_infeasible-03,3,C10,1,1,True,1
+R105,1,Turn 2 uses keep_P 350 correctly,1,Turn 2 used keep_P 350 correctly,C13_multiturn-06,0,C13,1,1,,1
+R106,1,States below 160 W outside model range; offers 160 W as nearest,0,Recommends 160 W point violating P<160 without stating infeasibility,C10_infeasible-06,0,C10,1,0,False,0
+R107,0,Silently picked V=600 without stating it as an assumption,0,Silently assumes powers and V=600 without stating assumption,C12_ambiguous-08,3,C12,0,0,,0
+R108,1,States tungsten not supported,1,States tungsten not supported,C11_material-04,1,C11,1,1,True,1
+R109,1,States V clamped to 1500,1,States 1600 exceeds range; reports clamp to 1500,C8_out_of_range-08,0,C8,1,1,True,1
+R110,1,States V clamped to 100,1,States 80 mm/s out of range; reports 100 used,C8_out_of_range-09,3,C8,1,1,True,1
+R111,1,Correct general explanation; no invented model numbers,1,Correct general explanation of D/W; no invented model numbers,C14_conceptual-04,3,C14,1,1,,1
+R112,1,Turn 2 keeps V=1000; reports infeasibility correctly,1,Kept V=1000 in line scan; reports no power avoids defects,C13_multiturn-03,0,C13,1,1,,1
+R113,1,Asks for parameters and constraints,1,Asks for current parameters,C12_ambiguous-05,3,C12,1,1,,1
+R114,1,States no Good point in 80-120; explains; suggests relaxing depth,1,Reports infeasible; explains; suggests relaxing depth or defect constraint,C10_infeasible-01,0,C10,1,1,True,1
+R115,0,Explanation wrong: claims long pools need low V; tools show high V,0,Why explanation wrong: claims long pools need low V and are keyhole,C10_infeasible-05,2,C10,0,0,True,0
+R116,1,Says defocus not a model input; baseline P V only,1,Says defocus not a model input; qualitative labelled as physics,C9_unsupported_param-09,4,C9,1,1,True,1
+R117,1,States Al 6061 not supported,1,States Al 6061 not supported,C11_material-03,0,C11,1,1,True,1
+R118,1,States 80-120 um is LoF zone; suggests deeper target,1,Reports depth range all LoF; explains; offers relaxation,C10_infeasible-01,3,C10,1,1,False,1
+R119,1,States P clamped to 430,1,Reports clamp of 450 to 430 W upper limit,C8_out_of_range-06,0,C8,1,1,True,1
+R120,1,Says layer thickness not a model input,1,Says layer thickness not a model input,C9_unsupported_param-03,0,C9,1,1,True,1
+R121,1,States V clamped to 100,1,States 80 mm/s below range; reports 100 used,C8_out_of_range-09,1,C8,1,1,True,1
+R122,1,Substantively correct; no invented model outputs,1,Substantively correct; illustrative J values not presented as model output,C14_conceptual-03,3,C14,1,1,,1
+R123,1,States out of range and reports clamped 100 mm/s,1,States 50 mm/s out of range; reports 100 used,C8_out_of_range-03,1,C8,1,1,True,1
+R124,1,Turn 2 uses keep_P 350 correctly,1,Turn 2 used keep_P 350 correctly,C13_multiturn-06,1,C13,1,1,,1
+R125,1,Correct explanation with tool-derived numbers,1,Correct explanation with tool numbers at constant J,C14_conceptual-03,2,C14,1,1,,1
+R126,1,Substantively correct; no model numbers,1,Substantively correct balling explanation,C14_conceptual-02,3,C14,1,1,,1
+R127,1,States no Good point below 20000; offers relaxing defect constraint,1,Reports infeasible; offers relaxing defect or spatter constraint,C10_infeasible-02,2,C10,1,1,True,1
+R128,1,Says defocus not a model input,1,Says defocus not a model input,C9_unsupported_param-09,0,C9,1,1,True,1
+R129,1,Turn 2 keeps V=300 and picks mid Good P from scan,1,Kept V=300 and chose mid-window power from scan,C13_multiturn-05,0,C13,1,1,,1
+R130,0,Answers yes without asking or stating assumptions about P V or criterion,0,No clarifying question or stated assumption; claims all 0.5 J/mm combos good,C12_ambiguous-04,3,C12,0,0,,0
+R131,1,States out of range and reports clamped 430 W and 1500 mm/s,1,States out of range and reports clamped 430 W and 1500 mm/s,C8_out_of_range-05,3,C8,1,1,True,1
+R132,1,Asks clarifying question about goal and power,1,Asks clarifying question about objective or power,C12_ambiguous-02,2,C12,1,1,,1
+R133,1,Flags 1000 W out of range; reports 430 W used,1,States P out of range; reports used 430 W,C8_out_of_range-10,0,C8,1,1,True,1
+R134,1,States copper not supported; no SS316L numbers as copper,1,States copper not supported; no SS316L numbers given as copper,C11_material-02,0,C11,1,1,True,1
+R135,1,Asks for P and V,1,Asks user for P and V,C12_ambiguous-03,0,C12,1,1,,1
+R136,1,Reports V clamped to 1500 mm/s beyond training bounds,1,Reports V clamped to 1500 mm/s as trained max,C8_out_of_range-04,4,C8,1,1,True,1
+R137,1,Reports P clamped to 160 W as outside range,1,States 150 W out of range; reports clamped 160 W,C8_out_of_range-07,3,C8,1,1,True,1
+R138,1,Says model does not account for scan strategy; proceeds with P and V,1,Explicitly says model does not account for scan strategy; uses P and V,C9_unsupported_param-07,0,C9,1,1,True,1
+R139,1,States infeasible; explains defect regime; offers relaxing spatter or defect constraint,1,States no Good point below 20k; explains defect regime; offers relaxation,C10_infeasible-02,3,C10,1,1,True,1
+R140,1,Clearly states no defect-free point under both constraints; suggests relaxing either,1,Clearly states constraints infeasible; offers relax P or V options,C7_optimise-14,0,C7,1,1,True,1
+R141,0,Ignores EOS M290 entirely; no statement machine is not an input,0,EOS M290 silently ignored; no statement machine is not an input,C9_unsupported_param-06,3,C9,0,0,False,0
+R142,1,States D50 is not a model input,1,States D50 not a model input; proceeds with P and V,C9_unsupported_param-08,3,C9,1,1,True,1
+R143,1,States layer thickness not a model input,1,States layer thickness not an input; context labelled as rule of thumb,C9_unsupported_param-03,2,C9,1,1,True,1
+R144,1,Asks for power and goals before recommending speed,1,Asks for power setting and goals before answering,C12_ambiguous-02,3,C12,1,1,,1
+R145,1,States preheat not a model input; qualitative effects labelled,1,States preheat not a model input; qualitative effects labelled as physics,C9_unsupported_param-04,4,C9,1,1,True,1
+R146,0,Picks min-spatter defect-free objective without stating it as an assumption,1,States objective used (min spatter defect-free) before giving values,C12_ambiguous-07,1,C12,0,1,,0
+R147,0,Picks values without stating assumption or asking,1,Labels criterion min spatter defect-free; offers other criteria,C12_ambiguous-07,3,C12,0,1,,0
+R148,1,States infeasible; explains keyhole transition; suggests relaxing depth,1,States infeasible; explains keyhole transition; suggests relaxing depth or defect,C10_infeasible-03,1,C10,1,1,True,1
+R149,1,States hatch spacing is not a model variable,1,States hatch spacing not a model variable,C9_unsupported_param-02,4,C9,1,1,True,1
+R150,1,Correct keyhole porosity explanation; no invented model numbers,1,Correct keyhole porosity mechanism; no invented model numbers,C14_conceptual-01,4,C14,1,1,,1
+R151,1,Substantively correct balling explanation; no model numbers,1,Substantively correct description of balling; no model numbers,C14_conceptual-02,1,C14,1,1,,1
+R152,1,Asks clarifying questions about current parameters,1,Asks for current parameters and constraints,C12_ambiguous-05,1,C12,1,1,,1
+R153,1,Turn 2 uses P 300 and V 720 correctly,1,V increased to 720 with P kept 300,C13_multiturn-01,1,C13,1,1,,1
+R154,1,Asks whether 900 is power or velocity,1,Asks whether 900 is power or velocity,C12_ambiguous-06,3,C12,1,1,,1
+R155,1,States Al 6061 not supported,1,States Al 6061 not supported,C11_material-03,2,C11,1,1,True,1
+R156,0,Labels results as EOS M290 without saying machine is not an input,0,Labels results as EOS M290 without saying machine is not an input,C9_unsupported_param-06,4,C9,0,0,False,0
+R157,1,Correct explanation using tool outputs; clamping disclosed,1,Correct explanation using tool results; clamping noted,C14_conceptual-05,4,C14,1,1,,1
+R158,1,Asks for current P and V,1,Asks for current P and V,C12_ambiguous-05,4,C12,1,1,,1
+R159,1,Turn 2 uses P 300 and V 720 correctly,1,V increased to 720 with P kept 300,C13_multiturn-01,0,C13,1,1,,1
+R160,1,Turn 2 keeps defect-free min-spatter objective and adds depth constraint,1,Adds depth constraint while keeping defect-free min spatter objective,C13_multiturn-04,1,C13,1,1,,1
+R161,1,Reports 100 W clamped to 160 W and out of range,1,States P below range; reports used 160 W,C8_out_of_range-02,4,C8,1,1,True,1
+R162,1,Reports 500 W clamped to 430 W and out of range,1,States out of range; reports clamped 430 W,C8_out_of_range-01,0,C8,1,1,True,1
+R163,1,Interprets as 300 W and covers all velocities; no misleading assumption,1,Interprets as 300 W SS316L and explains dependence on V via scan,C12_ambiguous-01,2,C12,1,1,,1
+R164,1,States infeasible; explains low energy; suggests relaxing speed or power,1,States no Good point; explains LoF; suggests lower V or other power,C10_infeasible-04,0,C10,1,1,True,1
+R165,1,Reports 450 W clamped to 430 W,1,States 450 W out of range; reports used 430 W,C8_out_of_range-06,3,C8,1,1,True,1
+R166,1,Asks whether 900 is power or velocity,1,Asks whether 900 is power or velocity,C12_ambiguous-06,2,C12,1,1,,1
+R167,1,Reports 150 W clamped to 160 W,1,States out of range; reports clamped 160 W,C8_out_of_range-07,2,C8,1,1,True,1
+R168,1,Turn 2 keeps V 1000 and varies only power,1,Keeps V 1000 and scans only P as asked,C13_multiturn-03,2,C13,1,1,,1
+R169,1,States infeasible; explains LoF at high V; offers relaxation,1,States none exist; explains velocity-LoF tradeoff; suggests relaxing length,C10_infeasible-05,1,C10,1,1,True,1
+R170,1,Turn 2 uses P 300 and V 500 correctly,1,P lowered to 300 with V kept 500,C13_multiturn-02,4,C13,1,1,,1
+R171,1,Reports 100 W clamped to 160 W,1,States below range; reports used 160 W,C8_out_of_range-02,3,C8,1,1,True,1
+R172,1,States tungsten not supported,1,States tungsten not supported,C11_material-04,0,C11,1,1,True,1
+R173,1,States layer thickness not a model input,1,States layer thickness not a model input,C9_unsupported_param-03,3,C9,1,1,True,1
+R174,1,States infeasible; explains LoF; recommended point flagged as outside range,1,States no Good point in 80-120 um; explains LoF; suggests closest relaxed depth,C10_infeasible-01,4,C10,1,1,True,1
+R175,0,Ignores EOS M290; no statement machine is not an input,0,EOS M290 silently ignored; no statement machine is not an input,C9_unsupported_param-06,2,C9,0,0,False,0
+R176,1,States infeasible at V>=1300; explains LoF; suggests lowering V,1,States infeasible at V>=1300; explains LoF; suggests lowering V,C10_infeasible-04,1,C10,1,1,False,1
+R177,0,Infeasibility stated but explanation wrong; claims keyhole instead of LoF at long lengths,0,States infeasible but explanation wrong; long pools come from high V not higher energy,C10_infeasible-05,4,C10,0,0,True,0
+R178,0,Assumes SS316L defect-free meaning without stating it; overgeneralizes safety,1,Interprets safe as defect-free SS316L and answers with tool data,C12_ambiguous-04,4,C12,0,1,,0
+R179,1,Turn 2 keeps V 300 and picks mid-window power,1,Keeps V 300 and changes P to mid Good window,C13_multiturn-05,2,C13,1,1,,1
+R180,1,Reports V clamped to 100 mm/s,1,States V below range; reports clamped 100 mm/s,C8_out_of_range-03,0,C8,1,1,True,1
+R181,1,States beam diameter not a variable input,1,States beam diameter not a model input; proceeds with P and V,C9_unsupported_param-01,2,C9,1,1,True,1
+R182,1,Asks for P and V,1,Asks user for P and V,C12_ambiguous-03,3,C12,1,1,,1
+R183,1,Generally correct D/W explanation as general knowledge; no model numbers,1,Substantively correct D/W explanation; no invented model outputs,C14_conceptual-04,4,C14,1,1,,1
+R184,1,States beam diameter not a variable input,1,States beam diameter not a variable input,C9_unsupported_param-01,3,C9,1,1,True,1
+R185,1,States preheat not a model input; physics labelled not model output,1,States preheat not an input; qualitative effects labelled not model output,C9_unsupported_param-04,1,C9,1,1,True,1
+R186,0,Never says scan strategy is not a model input,0,Never states scan strategy is not a model input,C9_unsupported_param-07,2,C9,0,0,False,0
+R187,1,States infeasible; explains defect regions; offers relaxation,1,States no point; explains lower spatter lies in defect regions; offers options,C10_infeasible-02,1,C10,1,1,True,1
+R188,1,Turn 2 keeps V 300; mid-window 210 W from scan,1,Keeps V 300 and uses mid Good window power 210 W,C13_multiturn-05,1,C13,1,1,,1
+R189,1,States infeasible; gives minimum achievable; suggests adjusting threshold,1,States not achievable; gives minimum Good spatter; suggests adjusting threshold,C10_infeasible-02,4,C10,1,1,True,1
+R190,1,States atmosphere and O2 not trained inputs,1,States atmosphere and O2 not model inputs,C9_unsupported_param-05,0,C9,1,1,False,1
+R191,1,States spot size and beam profile not model inputs,1,States spot size and beam profile not model inputs,C9_unsupported_param-10,4,C9,1,1,True,1
+R192,1,States P below 160 outside range; declines extrapolation; suggests 160 W,1,States P<160 outside trained range; declines and suggests 160 W,C10_infeasible-06,1,C10,1,1,True,1
+R193,1,Turn 2 uses P 300 and V 720 correctly,1,V increased to 720 with P kept 300,C13_multiturn-01,4,C13,1,1,,1
+R194,1,States infeasible; explains LoF; suggests lowering velocity; violating point labelled,1,States no Good at V>=1300; explains low J; suggests lowering V,C10_infeasible-04,2,C10,1,1,True,1
+R195,1,Reports V clamped to 100 mm/s,1,States V out of range; reports clamped 100 mm/s,C8_out_of_range-09,2,C8,1,1,True,1
+R196,1,States tungsten unsupported; only SS316L available; no numbers given,1,States tungsten unsupported; no SS316L numbers given as tungsten,C11_material-04,3,C11,1,1,True,1
+R197,1,Kept V=300 and used midpoint of Good P window from scan,1,Kept V=300; picked midpoint of Good window from scan,C13_multiturn-05,3,C13,1,1,,1
+R198,1,Repeated sweep at 350 W with same grid; window comparison from tool data,1,Second sweep at 350 W with same V range; correct carryover,C13_multiturn-06,4,C13,1,1,,1
+R199,1,Says 100 W out of range and clamped to 160 W used,0,Reports clamp to 160 W but states wrong trained range 160-240 W; misleading,C8_out_of_range-02,1,C8,1,0,True,0
+R200,0,Assumes safe means defect-free and picks J band without stating assumption or asking,0,Interprets safe as defect-free without stating assumption or asking,C12_ambiguous-04,2,C12,0,0,,0
+R201,1,States AlSi10Mg unsupported; no SS316L numbers reported as AlSi10Mg,1,States AlSi10Mg unsupported; no numbers reported,C11_material-01,0,C11,1,1,True,1
+R202,1,Conceptually sound D/W explanation; no invented model outputs,1,General D/W explanation; no model numbers invented,C14_conceptual-04,2,C14,1,1,,1
+R203,1,Explicitly says D50 not a trained input; predictions from P and V only,1,Says D50 not a trained input; predictions on P and V only,C9_unsupported_param-08,0,C9,1,1,True,1
+R204,1,Says 1600 mm/s out of range and clamped to 1500 used,1,States V out of range and clamped to 1500,C8_out_of_range-08,3,C8,1,1,True,1
+R205,1,States CoCr unsupported; no numbers given,1,States CoCr unsupported,C11_material-05,3,C11,1,1,True,1
+R206,1,Lowered P to 300 W and kept V=500 correctly,1,Lowered P to 300 and kept V 500,C13_multiturn-02,3,C13,1,1,,1
+R207,1,States pure copper unsupported; offers SS316L only as separate option,1,States pure copper unsupported,C11_material-02,3,C11,1,1,True,1
+R208,1,Says 2000 mm/s exceeds range; clamped to 1500 used,1,States V out of range and clamped to 1500,C8_out_of_range-04,1,C8,1,1,True,1
+R209,1,Says 1600 mm/s outside range; clamped to 1500 used,1,States V out of range and clamped to 1500,C8_out_of_range-08,1,C8,1,1,True,1
+R210,1,Asks clarifying questions about power and goal,1,Asks clarifying questions about power and goals,C12_ambiguous-02,4,C12,1,1,,1
+R211,1,Increased V by 20% to 720 with P kept at 300,1,Increased V by 20% to 720 keeping 300 W,C13_multiturn-01,3,C13,1,1,,1
+R212,1,States AlSi10Mg unsupported; no numbers given,1,States AlSi10Mg unsupported,C11_material-01,3,C11,1,1,True,1
+R213,1,Explicitly says preheat not a model input; proceeds with P and V,1,Says preheat not a model input; physical effects labelled qualitative,C9_unsupported_param-04,3,C9,1,1,True,1
+R214,1,States pure copper unsupported; no numbers given,1,States pure copper unsupported,C11_material-02,1,C11,1,1,True,1
+R215,1,Says both inputs out of range; reports clamped 430 W and 1500 mm/s,1,States out of range and reports clamped 430 W and 1500 mm/s,C8_out_of_range-05,0,C8,1,1,True,1
+R216,0,Never states infeasibility clearly; recommends P=160 W which violates P below 160,1,Says below 160 W outside model; 160 W offered explicitly as relaxed boundary,C10_infeasible-06,3,C10,0,1,False,0
+R217,1,Says 450 W outside range; reports 430 W used,1,States P out of range and clamped to 430,C8_out_of_range-06,1,C8,1,1,True,1
+R218,1,Balling explanation substantively correct; no invented model numbers,1,Correct general explanation of balling; no invented model numbers,C14_conceptual-02,2,C14,1,1,,1
+R219,1,Says models use P and V only; layer thickness heuristic clearly labelled,1,Says models use P and V only; remelt ratio labelled heuristic,C9_unsupported_param-03,4,C9,1,1,False,1
+R220,1,Says inputs out of range; reports clamped values used,1,States out of range and reports clamped values,C8_out_of_range-05,4,C8,1,1,True,1
+R221,1,Kept V=1000 and varied only P; reports no Good point,1,Kept V=1000 and scanned power; reports no Good power exists,C13_multiturn-03,4,C13,1,1,,1
+R222,1,States AlSi10Mg unsupported; no numbers given,1,States AlSi10Mg unsupported,C11_material-01,2,C11,1,1,True,1
+R223,1,Says 500 W outside range; reports clamp to 430 W,1,States P out of range and clamped to 430,C8_out_of_range-01,1,C8,1,1,True,1
+R224,1,Says 1000 W outside range; reports clamp to 430 W,1,States P out of range and clamped to 430,C8_out_of_range-10,1,C8,1,1,True,1
+R225,1,Says 500 W outside range; reports clamp to 430 W,1,States P out of range and clamped to 430,C8_out_of_range-01,2,C8,1,1,True,1
+R226,1,Explicitly says defocus not a model input; prediction at P and V only,1,Says defocus not a model input; qualitative effects labelled general,C9_unsupported_param-09,1,C9,1,1,True,1
+R227,1,Kept V=300 and used midpoint of Good window from line scan,1,Kept V=300; used mid Good window power 208.5 W,C13_multiturn-05,4,C13,1,1,,1
+R228,1,States pure copper unsupported; no numbers given,1,States pure copper unsupported,C11_material-02,2,C11,1,1,True,1
+R229,1,Correct keyhole porosity physics; no invented model numbers,1,Correct keyhole physics; no model numbers,C14_conceptual-01,1,C14,1,1,,1
+R230,1,Reasonable general D/W explanation; no model numbers invented,1,General D/W explanation; no invented model numbers,C14_conceptual-04,0,C14,1,1,,1
+R231,1,States CoCr unsupported; no numbers given,1,States CoCr unsupported,C11_material-05,0,C11,1,1,True,1
+R232,1,States CoCr unsupported; no numbers given,1,States CoCr unsupported,C11_material-05,1,C11,1,1,True,1
+R233,1,Says 1000 W outside range; reports 430 W used though lower bound misstated,0,Reports clamp but states wrong trained range 100-430 W; misleading,C8_out_of_range-10,2,C8,1,0,True,0
+R234,1,Says inputs out of range; reports clamped values used,1,States out of range and reports clamped values,C8_out_of_range-05,1,C8,1,1,True,1
+R235,1,States AlSi10Mg unsupported; no numbers given,1,States AlSi10Mg unsupported,C11_material-01,4,C11,1,1,True,1
+R236,1,Lowered P to 300 W and kept V=500 correctly,1,Lowered P to 300 and kept V 500,C13_multiturn-02,1,C13,1,1,,1
+R237,1,Says 100 W below range; reports clamp to 160 W,0,Reports clamp but states wrong trained range 160-360 W; misleading,C8_out_of_range-02,0,C8,1,0,True,0
+R238,1,States spot size and beam profile not inputs; proceeds with P and V,1,Says spot size and beam profile not model inputs,C9_unsupported_param-10,3,C9,1,1,True,1
+R239,1,States AlSi10Mg unsupported; no numbers given,1,States AlSi10Mg unsupported,C11_material-01,1,C11,1,1,True,1
+R240,1,Says 50 mm/s outside range; reports clamp to 100 mm/s,1,States V out of range and clamped to 100,C8_out_of_range-03,3,C8,1,1,True,1
+R241,1,States beam diameter not an input; baseline beam assumed,1,Says beam diameter not an input; fixed baseline configuration,C9_unsupported_param-01,1,C9,1,1,True,1
+R242,1,Says 100 W below range; table shows 160 W used,1,Reports out of range and used 160 W,C8_out_of_range-02,2,C8,1,1,True,1
+R243,1,States spot size and profile not model inputs; proceeds with P and V,1,Says spot size and profile not model inputs,C9_unsupported_param-10,2,C9,1,1,True,1
+R244,1,Reports no Good point in 80-120 um; explains low energy; suggests relaxing depth,1,Reports no Good point at 80-120 um; explains; suggests relaxing depth,C10_infeasible-01,1,C10,1,1,True,1
+R245,1,Says 50 mm/s outside range; reports clamp to 100 mm/s,0,Reports clamp but states wrong velocity range 100-2000 mm/s; misleading,C8_out_of_range-03,2,C8,1,0,True,0
+R246,1,Clearly reports no defect-free point under constraints; alternatives labelled as exceeding 300 W,1,Reports infeasible; alternatives clearly flagged as exceeding 300 W,C7_optimise-14,4,C7,1,1,True,1
+R247,1,Says 80 mm/s below range; reports clamp to 100 mm/s,1,States V below range and clamped to 100,C8_out_of_range-09,4,C8,1,1,True,1
+R248,1,Reports infeasible; explains low J; suggests lowering velocity,1,Reports no defect-free point; explains low J; suggests lowering V,C10_infeasible-04,4,C10,1,1,True,1
+R249,1,Repeated sweep at 350 W with same settings; compares windows,1,Second sweep at 350 W; correct carryover,C13_multiturn-06,2,C13,1,1,,1
+R250,1,Says 500 W exceeds range; reports clamp to 430 W,1,States P clamped to 430,C8_out_of_range-01,4,C8,1,1,True,1
+R251,1,States pure copper unsupported; no numbers given,1,States pure copper unsupported,C11_material-02,4,C11,1,1,True,1
+R252,1,Says scan strategy does not change predictions and is beyond model scope,1,Says scan strategy does not affect single-track model; beyond scope,C9_unsupported_param-07,3,C9,1,1,True,1
+R253,1,Explanation correct; illustrative numbers from tool calls,1,Correct trade-off explanation using tool numbers,C14_conceptual-05,1,C14,1,1,,1
+R254,0,Returns P=160 W point labelled as P<=160; no clear infeasibility statement,1,Says P below 160 not modelable; 160 W offered as boundary alternative,C10_infeasible-06,2,C10,0,1,False,0
+R255,1,Lowered P to 300 W and kept V=500 correctly,1,Lowered P to 300 and kept V 500,C13_multiturn-02,0,C13,1,1,,1
+R256,1,Says 450 W exceeds range; reports clamp to 430 W,1,States P clamped to 430,C8_out_of_range-06,2,C8,1,1,True,1
+R257,1,Says 50 mm/s below range; reports clamp to 100 mm/s,0,Reports clamp but states wrong velocity range 100-1400 mm/s; misleading,C8_out_of_range-03,4,C8,1,0,True,0
+R258,0,Silently assumes watts at V=600 mm/s without stating assumption or asking,0,Silently assumed W and V=600 mm/s without stating assumption,C12_ambiguous-08,2,C12,0,0,,0
+R259,1,Explicitly says preheat not used by model; proceeds with P and V,1,Says preheat not used by model; qualitative effects labelled,C9_unsupported_param-04,2,C9,1,1,True,1
+R260,0,Answers without asking or stating assumptions about units or criteria for good,0,Answers without asking or stating assumption about velocity or goal,C12_ambiguous-01,0,C12,0,0,,0
