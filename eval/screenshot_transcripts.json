@@ -1,0 +1,254 @@
+[
+ {
+  "id": "keyhole",
+  "source": "Keyhole.png",
+  "blocks": [
+   {
+    "type": "user",
+    "text": "Predict at 400 W and 300 mm/s"
+   },
+   {
+    "type": "tool",
+    "name": "mcp_predict_all",
+    "args": {},
+    "note": "arguments not shown in the screenshot"
+   },
+   {
+    "type": "answer",
+    "text": "Here are the predictions for **SS316L at 400 W and 300 mm/s**:\n\n| Metric | Value |\n|---|---|\n| Spatter Volume | 342,833 µm³ |\n| Melt Pool Depth | 442 µm |\n| Melt Pool Width | 251 µm |\n| Melt Pool Length | 266 µm |\n| Cross-Section Area | 66,215 µm² |\n| Melt Pool Volume | 8.74 × 10⁶ µm³ |\n| Energy Density (J) | 1.33 J/mm |\n| Defect Type | **Keyhole** |\n\nThe depth-to-width ratio of 1.76 exceeds the keyhole threshold (1.25), indicating keyhole-mode melting at these parameters. This results in high spatter and potential porosity. You may want to consider reducing power or increasing scan speed to move",
+    "cut": true
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "balling",
+  "source": "balling.png",
+  "blocks": [
+   {
+    "type": "user",
+    "text": "Predict at 300 W and 800 mm/s"
+   },
+   {
+    "type": "tool",
+    "name": "mcp_predict_all",
+    "args": {},
+    "note": "arguments not shown in the screenshot"
+   },
+   {
+    "type": "answer",
+    "text": "Here are the predictions for **SS316L at 300 W and 800 mm/s**:\n\n| Parameter | Value |\n|---|---|\n| Energy Density (J) | 0.375 J/mm |\n| Spatter Volume | 164,357 µm³ |\n| Melt Pool Length | 493 µm |\n| Melt Pool Width | 179 µm |\n| Melt Pool Depth | 143 µm |\n| Cross-Section Area | 17,483 µm² |\n| Melt Pool Volume | 4,018,877 µm³ |\n| Defect Type | Balling |\n\nThe model predicts a **balling defect** at these parameters. This is indicated by the length-to-width ratio (L/W = 2.76), which falls within the balling threshold range (2.35–3.7). The relatively high spatter volume also suggests this isn't an optimal operating point.\n\nWould you like me to suggest better parameters to avoid this defect?",
+    "cut": false
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "lackoffusion",
+  "source": "lackoffusion.png",
+  "blocks": [
+   {
+    "type": "user",
+    "text": "Predict at 300 W and 1200 mm/s"
+   },
+   {
+    "type": "tool",
+    "name": "mcp_predict_all",
+    "args": {},
+    "note": "arguments not shown in the screenshot"
+   },
+   {
+    "type": "answer",
+    "text": "Here are the predictions for **SS316L at 300 W and 1200 mm/s**:\n\n| Parameter | Value |\n|---|---|\n| Energy Density (J) | 0.25 J/mm |\n| Spatter Volume | 109,574 µm³ |\n| Melt Pool Length | 612 µm |\n| Melt Pool Width | 164 µm |\n| Melt Pool Depth | 92 µm |\n| Cross-Section Area | 9,787 µm² |\n| Melt Pool Volume | 2.40 × 10⁶ µm³ |\n| Defect Type | Lack of Fusion |\n\nThe shallow depth (92 µm, below the 137 µm threshold) indicates insufficient melting at these parameters. You may want to increase power or reduce scan speed to achieve better fusion",
+    "cut": true
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "unit1",
+  "source": "Unit1.png",
+  "blocks": [
+   {
+    "type": "user",
+    "text": "what should I expect from operating at 350 W and 1 m/s"
+   },
+   {
+    "type": "tool",
+    "name": "mcp_predict_all",
+    "args": {},
+    "note": "arguments not shown in the screenshot"
+   },
+   {
+    "type": "answer",
+    "text": "Here's what to expect for **SS316L at 350 W and 1000 mm/s**:\n\n| Parameter | Value |\n|---|---|\n| Energy Density (J) | 0.35 J/mm |\n| Spatter Volume | 226,437 µm³ |\n| Melt Pool Length | 601 µm |\n| Melt Pool Width | 189 µm |\n| Melt Pool Depth | 133 µm |\n| Cross-Section Area | 16,349 µm² |\n| Melt Pool Volume | 4.43 × 10⁶ µm³ |\n| Defect Type | Lack of Fusion |\n\nThese parameters are on the edge—the depth (133 µm) is just below the 137 µm threshold for good fusion. You're close to a stable operating regime, but still at risk for lack-of-fusion porosity.",
+    "cut": false
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "unit2",
+  "source": "Unit2.png",
+  "blocks": [
+   {
+    "type": "user",
+    "text": "predict at 295 and 750"
+   },
+   {
+    "type": "tool",
+    "name": "mcp_predict_all",
+    "args": {},
+    "note": "arguments not shown in the screenshot"
+   },
+   {
+    "type": "answer",
+    "text": "Here are the predictions for **SS316L at P = 295 W, V = 750 mm/s**:\n\n| Metric | Value |\n|---|---|\n| Energy Density (J) | 0.393 J/mm |\n| Spatter Volume | 144,675 µm³ |\n| Melt Pool Length | 468 µm |\n| Melt Pool Width | 182 µm |\n| Melt Pool Depth | 153 µm |\n| Cross-Section Area | 18,937 µm² |\n| Melt Pool Volume | 4.13 × 10⁶ µm³ |\n| Defect Type | Balling |\n\nThe model predicts **Balling** defects at these parameters. This is indicated by the length-to-width ratio (L/W = 2.58), which falls within the balling range (2.35–3.7). You may want to adjust parameters to move into a more stable processing window.",
+    "cut": false
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "unit3",
+  "source": "Unit3.png",
+  "blocks": [
+   {
+    "type": "user",
+    "text": "Use P = 150 + 0.5×500 and V = 2×400."
+   },
+   {
+    "type": "tool",
+    "name": "mcp_predict_all",
+    "args": {},
+    "note": "arguments not shown in the screenshot"
+   },
+   {
+    "type": "answer",
+    "text": "Here are the predictions for **P = 400 W** and **V = 800 mm/s** (SS316L):\n\n| Metric | Value |\n|---|---|\n| Energy Density (J) | 0.50 J/mm |\n| Spatter Volume | 180,078 µm³ |\n| Melt Pool Length | 514 µm |\n| Melt Pool Width | 205 µm |\n| Melt Pool Depth | 216 µm |\n| Cross-Section Area | 28,686 µm² |\n| Melt Pool Volume | 6.90 × 10⁶ µm³ |\n| Defect Type | Balling |\n\nThe model predicts a **Balling** defect at these parameters. The length-to-width ratio (L/W ≈ 2.51) falls within the balling regime (2.35–3.7), indicating an elongated, unstable melt pool. You may want to reduce power or increase velocity to move toward a more stable \"Good\" regime.",
+    "cut": false
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "unit4",
+  "source": "Unit4.png",
+  "blocks": [
+   {
+    "type": "user",
+    "text": "Hit it with 350-ish watts, speed a bit under a meter per second."
+   },
+   {
+    "type": "tool",
+    "name": "mcp_predict_all",
+    "args": {},
+    "note": "arguments not shown in the screenshot"
+   },
+   {
+    "type": "answer",
+    "text": "At **350 W / 950 mm/s** for SS316L:\n\n| Metric | Value |\n|---|---|\n| Spatter Volume | ~230,000 µm³ |\n| Melt Pool Depth | 142 µm |\n| Melt Pool Width | 190 µm |\n| Melt Pool Length | 581 µm |\n| Energy Density (J) | 0.37 J/mm |\n| Defect Type | Balling |\n\nThe length-to-width ratio of ~3.1 pushes this into **balling territory** — the melt pool is getting elongated and unstable. Spatter is also on the higher side.\n\nIf you want to stay in this power range but reduce spatter and avoid balling, bumping the speed down closer to 600–700 mm/s or dropping power to ~280–300 W would help stabilize things. Want me to find an optimized point nearby?",
+    "cut": false
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "beam_diameter",
+  "source": "beam_diameter.png",
+  "blocks": [
+   {
+    "type": "user",
+    "text": "I want to predict at 300 W and 800 mm/s using beam diameter of 100 micron"
+   },
+   {
+    "type": "answer",
+    "text": "Similar to hatch spacing, **beam diameter is not an adjustable input** in this model—it's another fixed assumption from the training data.\n\nThe model only accepts:\n- **P** (Power in Watts)\n- **V** (Velocity in mm/s)\n- **Material**\n\nLet me run the prediction with the parameters you can control, and then I'll show you how to infer what beam diameter the model likely assumes:",
+    "cut": false
+   },
+   {
+    "type": "tool",
+    "name": "mcp_predict_all",
+    "args": {
+     "P": 300,
+     "V": 800,
+     "material": "SS316L"
+    },
+    "note": "tool request awaiting the user's approval; the screenshot ends here"
+   }
+  ],
+  "note": "earlier turns of this conversation (hatch spacing) are not shown"
+ },
+ {
+  "id": "linescan_P300",
+  "source": "Line_Scan_Power.png",
+  "blocks": [
+   {
+    "type": "answer",
+    "text": "**Query:** \"At P = 300 W, sweep velocity from 200 to 1200 mm/s and find the minimum spatter operating point.\"\n\n**Line Scan Results for SS316L at P = 300 W:**\n\n| V (mm/s) | J (J/mm) | Spatter Volume (µm³) | Defect Type |\n|---|---|---|---|\n| 200 | 1.50 | 196,222 | Keyhole |\n| 302 | 0.99 | 175,536 | Keyhole |\n| 405 | 0.74 | 109,925 | Keyhole |\n| 431 | 0.70 | 94,965 | Good ✓ |\n| 482 | 0.62 | 73,736 | Good ✓ |\n| **533** | **0.56** | **66,239** | **Good ✓** |\n| 584 | 0.51 | 72,400 | Good ✓ |\n| 636 | 0.47 | 90,246 | Good ✓ |\n| 687 | 0.44 | 115,725 | Good ✓ |\n| 713 | 0.42 | 129,351 | Balling |\n| 815 | 0.37 | 167,017 | Balling |\n| 841 | 0.36 | 168,512 | Lack of Fusion |\n| 1,020 | 0.29 | 125,163 | Lack of Fusion |\n| 1,200 | 0.25 | 109,574 | Lack of Fusion |\n\n**Optimal Point:** V = 533 mm/s yields minimum spatter (66,239 µm³) within the stable \"Good\" regime.\n\nThe scan reveals clear defect transitions: Keyhole → Good → Balling → Lack of Fusion as velocity increases. Spatter volume shows a characteristic minimum in the conduction-mode regime before rising again as the melt pool becomes unstable.",
+    "cut": false
+   }
+  ],
+  "note": "the screenshot shows the agent's answer only"
+ },
+ {
+  "id": "linescan_V600",
+  "source": "Line_Scan_Velocity.png",
+  "blocks": [
+   {
+    "type": "answer",
+    "text": "**Query:** \"At V = 600 mm/s, sweep power from 200 to 420 W and show how the defect type changes.\"\n\n**Line Scan Results for SS316L at V = 600 mm/s:**\n\n| P (W) | J (J/mm) | Spatter Volume (µm³) | Defect Type |\n|---|---|---|---|\n| 200 | 0.33 | 51,152 | Lack of Fusion |\n| 217 | 0.36 | 60,583 | Lack of Fusion |\n| **228** | **0.38** | **67,561** | **Good ✓** |\n| 256 | 0.43 | 80,331 | Good ✓ |\n| 290 | 0.48 | 79,556 | Good ✓ |\n| 324 | 0.54 | 69,810 | Good ✓ |\n| **330** | **0.55** | **69,297** | **Good ✓** |\n| 352 | 0.59 | 77,332 | Good ✓ |\n| 358 | 0.60 | 82,732 | Good ✓ |\n| 364 | 0.61 | 89,724 | Keyhole |\n| 392 | 0.65 | 145,658 | Keyhole |\n| 420 | 0.70 | 187,234 | Keyhole |\n\n**Optimal Point:** P = 330 W yields minimum spatter (69,297 µm³) within the stable \"Good\" regime.\n\nAt this scan velocity, the stable processing window spans approximately 228–358 W. Below 228 W, insufficient energy leads to lack of fusion defects. Above 358 W, excessive penetration triggers keyhole-mode melting with significantly elevated spatter.",
+    "cut": false
+   }
+  ],
+  "note": "the screenshot shows the agent's answer only"
+ },
+ {
+  "id": "gridscan",
+  "source": "Grid_Scan.png",
+  "blocks": [
+   {
+    "type": "answer",
+    "text": "**Query:** \"Scan the parameter space from P = 200–400 W and V = 300–1000 mm/s. Show me only 'Good' points with spatter < 100,000 µm³, ranked by lowest spatter.\"\n\n**Filtered Grid Scan Results for SS316L:**\n\n| Rank | P (W) | V (mm/s) | J (J/mm) | Spatter (µm³) | Depth (µm) | Length (µm) | Defect |\n|---|---|---|---|---|---|---|---|\n| **1** | **200** | **500** | **0.40** | **55,600** | **142** | **305** | Good ✓ |\n| 2 | 200 | 450 | 0.44 | 59,119 | 158 | 290 | Good ✓ |\n| 3 | 214 | 550 | 0.39 | 59,687 | 140 | 332 | Good ✓ |\n| 4 | 214 | 500 | 0.43 | 60,777 | 156 | 315 | Good ✓ |\n| 5 | 229 | 550 | 0.42 | 65,788 | 155 | 343 | Good ✓ |\n| 6 | 229 | 500 | 0.46 | 65,791 | 172 | 325 | Good ✓ |\n| 7 | 214 | 450 | 0.48 | 66,008 | 174 | 299 | Good ✓ |\n| 8 | 314 | 550 | 0.57 | 66,110 | 243 | 378 | Good ✓ |\n| 9 | 300 | 550 | 0.55 | 66,804 | 228 | 376 | Good ✓ |\n| 10 | 229 | 600 | 0.38 | 67,781 | 139 | 361 | Good ✓ |\n\n**Summary:** Scanned 225 points (15×15 grid). Found 10 points meeting all constraints.\n\n**Best Operating Point:** P = 200 W, V = 500 mm/s produces the lowest spatter (55,600 µm³) while maintaining defect-free processing with adequate melt pool depth (142 µm).",
+    "cut": false
+   }
+  ],
+  "note": "the screenshot shows the agent's answer only"
+ },
+ {
+  "id": "opt_energy",
+  "source": "Optimization_Energy.png",
+  "blocks": [
+   {
+    "type": "answer",
+    "text": "**Query:** \"Optimize for minimum spatter within an energy density window of 0.4–0.6 J/mm.\"\n\n**Optimization Results for SS316L:**\n\n**Constraint Applied:**\n- Energy density (J): 0.4–0.6 J/mm\n- Defect type: Good (defect-free)\n\n| Rank | P (W) | V (mm/s) | J (J/mm) | Spatter (µm³) | Depth (µm) |\n|---|---|---|---|---|---|\n| **1** | **160** | **341** | **0.47** | **40,892** | **146** |\n| 2 | 169 | 390 | 0.43 | 46,540 | 142 |\n| 3 | 179 | 438 | 0.41 | 50,456 | 138 |\n| 4 | 188 | 438 | 0.43 | 54,623 | 148 |\n| 5 | 179 | 390 | 0.46 | 54,785 | 153 |\n\n**Recommendation:** The optimal point at J = 0.47 J/mm sits comfortably in the middle of the specified energy density window, providing margin against process drift while minimizing spatter generation.",
+    "cut": false
+   }
+  ],
+  "note": "the screenshot shows the agent's answer only"
+ },
+ {
+  "id": "opt_depth",
+  "source": "Optimization_Depth.png",
+  "blocks": [
+   {
+    "type": "answer",
+    "text": "**Query:** \"Find the best parameters with melt pool depth between 120–180 µm and spatter under 90,000 µm³.\"\n\n**Optimization Results for SS316L:**\n\n**Constraints Applied:**\n- Melt pool depth: 120–180 µm\n- Maximum spatter: 90,000 µm³\n- Defect type: Good (defect-free)\n\n| Rank | P (W) | V (mm/s) | Spatter (µm³) | Depth (µm) | Length (µm) | Status |\n|---|---|---|---|---|---|---|\n| **1** | **160** | **341** | **40,892** | **146** | **240** | **Optimal** |\n| 2 | 169 | 390 | 46,540 | 142 | 256 | Alternative |\n| 3 | 179 | 438 | 50,456 | 138 | 273 | Alternative |\n| 4 | 188 | 438 | 54,623 | 148 | 279 | Alternative |\n| 5 | 179 | 390 | 54,785 | 153 | 260 | Alternative |\n\n**Search Summary:** Scanned 900 points (30×30 grid). Found 5 points satisfying all constraints.\n\n**Recommendation:** P = 160 W at V = 341 mm/s delivers the lowest spatter (40,892 µm³) while maintaining a melt pool depth of 146 µm — well within the specified range for reliable inter-layer bonding.",
+    "cut": false
+   }
+  ],
+  "note": "the screenshot shows the agent's answer only"
+ },
+ {
+  "id": "opt_multi",
+  "source": "Optimization_Multi.png",
+  "blocks": [
+   {
+    "type": "answer",
+    "text": "**Query:** \"I need a deep melt pool (150–250 µm) with length between 350–500 µm, and spatter under 120,000 µm³. What are my options?\"\n\n**Optimization Results for SS316L:**\n\n**Constraints Applied:**\n- Melt pool depth: 150–250 µm\n- Melt pool length: 350–500 µm\n- Maximum spatter: 120,000 µm³\n- Defect type: Good (defect-free)\n\n| Rank | P (W) | V (mm/s) | Spatter (µm³) | Depth (µm) | Length (µm) | Width (µm) |\n|---|---|---|---|---|---|---|\n| **1** | **300** | **534** | **66,254** | **235** | **369** | **211** |\n| 2 | 309 | 534 | 66,351 | 244 | 370 | 213 |\n| 3 | 290 | 534 | 67,340 | 225 | 367 | 208 |\n| 4 | 328 | 583 | 67,649 | 242 | 395 | 211 |\n| 5 | 318 | 583 | 67,768 | 233 | 394 | 209 |\n\n**Search Summary:** Scanned 900 points. Found 5 viable parameter sets meeting all constraints.\n\n**Recommendation:** P = 300 W at V = 534 mm/s provides the best balance — achieving a deep melt pool (235 µm) with sufficient length (369 µm) for good track overlap while maintaining the lowest spatter in this constrained region.",
+    "cut": false
+   }
+  ],
+  "note": "the screenshot shows the agent's answer only"
+ }
+]

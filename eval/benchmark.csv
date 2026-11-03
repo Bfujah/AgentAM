@@ -1,0 +1,146 @@
+id,category,prompt,turns,expected_tool,P,V,P_range,V_range,constraints,must
+C1_explicit-01,C1_explicit,Predict spatter at 205 W and 960 mm/s.,,predict,205,960,,,,
+C1_explicit-02,C1_explicit,"What defect should I expect at P = 330 W, V = 410 mm/s?",,predict,330,410,,,,
+C1_explicit-03,C1_explicit,"Run a prediction for SS316L, laser power 240 W, scan speed 1220 mm/s.",,predict,240,1220,,,,
+C1_explicit-04,C1_explicit,"Give me melt pool depth, width and length for 420 W / 1400 mm/s.",,predict,420,1400,,,,
+C1_explicit-05,C1_explicit,Is 410 W at 1270 mm/s inside the stable window?,,predict,410,1270,,,,
+C1_explicit-06,C1_explicit,Predict spatter at 245 W and 150 mm/s.,,predict,245,150,,,,
+C1_explicit-07,C1_explicit,"What defect should I expect at P = 365 W, V = 350 mm/s?",,predict,365,350,,,,
+C1_explicit-08,C1_explicit,"Run a prediction for SS316L, laser power 205 W, scan speed 880 mm/s.",,predict,205,880,,,,
+C1_explicit-09,C1_explicit,"Give me melt pool depth, width and length for 200 W / 1300 mm/s.",,predict,200,1300,,,,
+C1_explicit-10,C1_explicit,Is 170 W at 1400 mm/s inside the stable window?,,predict,170,1400,,,,
+C1_explicit-11,C1_explicit,Predict spatter at 385 W and 950 mm/s.,,predict,385,950,,,,
+C1_explicit-12,C1_explicit,"What defect should I expect at P = 235 W, V = 1160 mm/s?",,predict,235,1160,,,,
+C1_explicit-13,C1_explicit,"Run a prediction for SS316L, laser power 250 W, scan speed 1040 mm/s.",,predict,250,1040,,,,
+C1_explicit-14,C1_explicit,"Give me melt pool depth, width and length for 280 W / 1110 mm/s.",,predict,280,1110,,,,
+C1_explicit-15,C1_explicit,Is 405 W at 340 mm/s inside the stable window?,,predict,405,340,,,,
+C1_explicit-16,C1_explicit,Predict spatter at 400 W and 1020 mm/s.,,predict,400,1020,,,,
+C1_explicit-17,C1_explicit,"What defect should I expect at P = 195 W, V = 890 mm/s?",,predict,195,890,,,,
+C1_explicit-18,C1_explicit,"Run a prediction for SS316L, laser power 260 W, scan speed 1320 mm/s.",,predict,260,1320,,,,
+C1_explicit-19,C1_explicit,"Give me melt pool depth, width and length for 215 W / 940 mm/s.",,predict,215,940,,,,
+C1_explicit-20,C1_explicit,Is 175 W at 1090 mm/s inside the stable window?,,predict,175,1090,,,,
+C2_units-01,C2_units,Predict at 285 W and 0.9 m/s.,,predict,285,900,,,,
+C2_units-02,C2_units,Predict at 0.305 kW at 300 mm/s.,,predict,305,300,,,,
+C2_units-03,C2_units,Predict at 295 W with a scan speed of 110.0 cm/s.,,predict,295,1100,,,,
+C2_units-04,C2_units,"Predict at 345 W, 57000 mm/min.",,predict,345,950,,,,
+C2_units-05,C2_units,Predict at 205 W and a linear energy density of 0.241 J/mm.,,predict,205,850,,,,
+C2_units-06,C2_units,Predict at 330 W and 1.15 m/s.,,predict,330,1150,,,,
+C2_units-07,C2_units,Predict at 0.325 kW at 800 mm/s.,,predict,325,800,,,,
+C2_units-08,C2_units,Predict at 335 W with a scan speed of 60.0 cm/s.,,predict,335,600,,,,
+C2_units-09,C2_units,"Predict at 300 W, 66000 mm/min.",,predict,300,1100,,,,
+C2_units-10,C2_units,Predict at 320 W and a linear energy density of 0.32 J/mm.,,predict,320,1000,,,,
+C2_units-11,C2_units,Predict at 335 W and 0.2 m/s.,,predict,335,200,,,,
+C2_units-12,C2_units,Predict at 0.35 kW at 550 mm/s.,,predict,350,550,,,,
+C2_units-13,C2_units,Predict at 415 W with a scan speed of 40.0 cm/s.,,predict,415,400,,,,
+C2_units-14,C2_units,"Predict at 185 W, 78000 mm/min.",,predict,185,1300,,,,
+C2_units-15,C2_units,Predict at 335 W and a linear energy density of 0.268 J/mm.,,predict,335,1250,,,,
+C3_implicit-01,C3_implicit,predict at 200 and 1360,,predict,200,1360,,,,
+C3_implicit-02,C3_implicit,"990 mm/s, 365 W - what happens?",,predict,365,990,,,,
+C3_implicit-03,C3_implicit,speed 630 power 320,,predict,320,630,,,,
+C3_implicit-04,C3_implicit,try 320/740,,predict,320,740,,,,
+C3_implicit-05,C3_implicit,what about 1250 for the velocity and 205 for the laser?,,predict,205,1250,,,,
+C3_implicit-06,C3_implicit,predict at 390 and 1030,,predict,390,1030,,,,
+C3_implicit-07,C3_implicit,"1050 mm/s, 385 W - what happens?",,predict,385,1050,,,,
+C3_implicit-08,C3_implicit,speed 1140 power 395,,predict,395,1140,,,,
+C3_implicit-09,C3_implicit,try 250/1160,,predict,250,1160,,,,
+C3_implicit-10,C3_implicit,what about 1300 for the velocity and 295 for the laser?,,predict,295,1300,,,,
+C4_arithmetic-01,C4_arithmetic,Use P = 200 + 150 and V = 3 x 250.,,predict,350,750,,,,
+C4_arithmetic-02,C4_arithmetic,Take 70% of 400 W and scan at half of 1200 mm/s.,,predict,280,600,,,,
+C4_arithmetic-03,C4_arithmetic,"Power is 240 W plus 15%, speed is 4 x 150 mm/s.",,predict,276,600,,,,
+C4_arithmetic-04,C4_arithmetic,Set P to 350 - 50 watts and V to 500 + 300 mm/s.,,predict,300,800,,,,
+C4_arithmetic-05,C4_arithmetic,Use P = 200 + 50 and V = 3 x 300.,,predict,250,900,,,,
+C4_arithmetic-06,C4_arithmetic,Take 80% of 400 W and scan at half of 1200 mm/s.,,predict,320,600,,,,
+C4_arithmetic-07,C4_arithmetic,"Power is 260 W plus 15%, speed is 4 x 200 mm/s.",,predict,299,800,,,,
+C4_arithmetic-08,C4_arithmetic,Set P to 350 - 100 watts and V to 500 + 300 mm/s.,,predict,250,800,,,,
+C4_arithmetic-09,C4_arithmetic,Use P = 150 + 100 and V = 3 x 250.,,predict,250,750,,,,
+C4_arithmetic-10,C4_arithmetic,Take 80% of 400 W and scan at half of 1000 mm/s.,,predict,320,500,,,,
+C5_colloquial-01,C5_colloquial,"Hit it with 350-ish watts, speed a bit under a meter per second.",,predict,,,"[340, 360]","[850, 999]",,
+C5_colloquial-02,C5_colloquial,"Roughly three hundred watts and fairly slow, say around half a metre per second.",,predict,,,"[290, 310]","[450, 550]",,
+C5_colloquial-03,C5_colloquial,"Crank the laser near the top of the range and go slow, around 200 mm/s.",,predict,,,"[400, 430]","[180, 220]",,
+C5_colloquial-04,C5_colloquial,"Low power, about two hundred watts, and pretty fast - a bit over a meter a second.",,predict,,,"[190, 210]","[1001, 1200]",,
+C5_colloquial-05,C5_colloquial,"Medium power (~280 W) and the usual speed people run 316L at, ~800 mm/s.",,predict,,,"[270, 290]","[780, 820]",,
+C5_colloquial-06,C5_colloquial,"Quarter of a kilowatt, 0.7 m/s give or take.",,predict,,,"[245, 255]","[650, 750]",,
+C5_colloquial-07,C5_colloquial,Just under 400 W at 6 hundred mm/s.,,predict,,,"[380, 399]","[590, 610]",,
+C5_colloquial-08,C5_colloquial,Run it at three-twenty watts and six hundred.,,predict,,,"[315, 325]","[595, 605]",,
+C5_colloquial-09,C5_colloquial,"Max power you allow, moderate speed (~1 m/s).",,predict,,,"[425, 430]","[950, 1050]",,
+C5_colloquial-10,C5_colloquial,"A gentle 180 W, crawling at 150 mm/s.",,predict,,,"[175, 185]","[140, 160]",,
+C6_linescan-01,C6_linescan,"At P = 200 W, sweep velocity from 200 to 1400 mm/s and find the minimum-spatter defect-free point.",,line_scan,,,,,,
+C6_linescan-02,C6_linescan,"At P = 250 W, sweep velocity from 200 to 1400 mm/s and find the minimum-spatter defect-free point.",,line_scan,,,,,,
+C6_linescan-03,C6_linescan,"At P = 300 W, sweep velocity from 200 to 1400 mm/s and find the minimum-spatter defect-free point.",,line_scan,,,,,,
+C6_linescan-04,C6_linescan,"At P = 350 W, sweep velocity from 200 to 1400 mm/s and find the minimum-spatter defect-free point.",,line_scan,,,,,,
+C6_linescan-05,C6_linescan,"At P = 400 W, sweep velocity from 200 to 1400 mm/s and find the minimum-spatter defect-free point.",,line_scan,,,,,,
+C6_linescan-06,C6_linescan,Hold scan speed at 400 mm/s and sweep power from 160 to 430 W. Where does the defect type change?,,line_scan,,,,,,
+C6_linescan-07,C6_linescan,Hold scan speed at 600 mm/s and sweep power from 160 to 430 W. Where does the defect type change?,,line_scan,,,,,,
+C6_linescan-08,C6_linescan,Hold scan speed at 800 mm/s and sweep power from 160 to 430 W. Where does the defect type change?,,line_scan,,,,,,
+C6_linescan-09,C6_linescan,Hold scan speed at 1000 mm/s and sweep power from 160 to 430 W. Where does the defect type change?,,line_scan,,,,,,
+C6_linescan-10,C6_linescan,Hold scan speed at 1200 mm/s and sweep power from 160 to 430 W. Where does the defect type change?,,line_scan,,,,,,
+C6_gridscan-01,C6_gridscan,Map the whole P-V process window for SS316L.,,grid_scan,,,,,,
+C6_gridscan-02,C6_gridscan,"Show me where keyhole, balling and lack of fusion occur across the full parameter space.",,grid_scan,,,,,,
+C6_gridscan-03,C6_gridscan,"Scan P = 200-400 W and V = 300-1000 mm/s on a 15x15 grid and list only Good points with spatter below 100,000 um^3.",,grid_scan,,,,,,
+C6_gridscan-04,C6_gridscan,Give me a process map between 250 and 430 W and 400-1200 mm/s.,,grid_scan,,,,,,
+C6_gridscan-05,C6_gridscan,Where is the stable window widest?,,grid_scan,,,,,,
+C7_optimise-01,C7_optimise,"Find the lowest-spatter defect-free parameters with melt pool depth between 120 and 180 um, spatter under 90,000 um^3.",,optimise,,,,,"{""depth"": [120, 180], ""spatter_max"": 90000}",
+C7_optimise-02,C7_optimise,Find the lowest-spatter defect-free parameters with linear energy density 0.4-0.6 J/mm.,,optimise,,,,,"{""J"": [0.4, 0.6]}",
+C7_optimise-03,C7_optimise,"Find the lowest-spatter defect-free parameters with melt pool depth between 150 and 250 um, length 350-500 um, spatter under 120,000 um^3.",,optimise,,,,,"{""depth"": [150, 250], ""length"": [350, 500], ""spatter_max"": 120000}",
+C7_optimise-04,C7_optimise,Find the lowest-spatter defect-free parameters with melt pool depth between 140 and 200 um.,,optimise,,,,,"{""depth"": [140, 200]}",
+C7_optimise-05,C7_optimise,"Find the lowest-spatter defect-free parameters with width 150-200 um, spatter under 80,000 um^3.",,optimise,,,,,"{""width"": [150, 200], ""spatter_max"": 80000}",
+C7_optimise-06,C7_optimise,Find the lowest-spatter defect-free parameters with scan speed at least 800 mm/s (productivity).,,optimise,,,,,"{""V_min"": 800}",
+C7_optimise-07,C7_optimise,Find the lowest-spatter defect-free parameters with power no higher than 250 W.,,optimise,,,,,"{""P_max"": 250}",
+C7_optimise-08,C7_optimise,"Find the lowest-spatter defect-free parameters with melt pool depth between 150 and 220 um, scan speed at least 600 mm/s (productivity).",,optimise,,,,,"{""depth"": [150, 220], ""V_min"": 600}",
+C7_optimise-09,C7_optimise,"Find the lowest-spatter defect-free parameters with linear energy density 0.3-0.45 J/mm, spatter under 100,000 um^3.",,optimise,,,,,"{""J"": [0.3, 0.45], ""spatter_max"": 100000}",
+C7_optimise-10,C7_optimise,Find the lowest-spatter defect-free parameters with length 300-400 um.,,optimise,,,,,"{""length"": [300, 400]}",
+C7_optimise-11,C7_optimise,Find the lowest-spatter defect-free parameters with power fixed at 300 W.,,optimise,,,,,"{""fix_P"": 300}",
+C7_optimise-12,C7_optimise,Find the lowest-spatter defect-free parameters with speed fixed at 700 mm/s.,,optimise,,,,,"{""fix_V"": 700}",
+C7_optimise-13,C7_optimise,"Find the lowest-spatter defect-free parameters with melt pool depth between 180 and 260 um, spatter under 100,000 um^3.",,optimise,,,,,"{""depth"": [180, 260], ""spatter_max"": 100000}",
+C7_optimise-14,C7_optimise,"Find the lowest-spatter defect-free parameters with scan speed at least 700 mm/s (productivity), power no higher than 300 W.",,optimise,,,,,"{""P_max"": 300, ""V_min"": 700}",
+C7_optimise-15,C7_optimise,"Find the lowest-spatter defect-free parameters with spatter under 60,000 um^3.",,optimise,,,,,"{""spatter_max"": 60000}",
+C8_out_of_range-01,C8_out_of_range,Predict spatter at 500 W and 800 mm/s.,,predict,500,800,,,,"state that the input is outside the trained range (160-430 W, 100-1500 mm/s) and report the values actually used, or decline to extrapolate"
+C8_out_of_range-02,C8_out_of_range,Predict spatter at 100 W and 600 mm/s.,,predict,100,600,,,,"state that the input is outside the trained range (160-430 W, 100-1500 mm/s) and report the values actually used, or decline to extrapolate"
+C8_out_of_range-03,C8_out_of_range,Predict spatter at 300 W and 50 mm/s.,,predict,300,50,,,,"state that the input is outside the trained range (160-430 W, 100-1500 mm/s) and report the values actually used, or decline to extrapolate"
+C8_out_of_range-04,C8_out_of_range,Predict spatter at 300 W and 2000 mm/s.,,predict,300,2000,,,,"state that the input is outside the trained range (160-430 W, 100-1500 mm/s) and report the values actually used, or decline to extrapolate"
+C8_out_of_range-05,C8_out_of_range,Predict spatter at 600 W and 3000 mm/s.,,predict,600,3000,,,,"state that the input is outside the trained range (160-430 W, 100-1500 mm/s) and report the values actually used, or decline to extrapolate"
+C8_out_of_range-06,C8_out_of_range,Predict spatter at 450 W and 1500 mm/s.,,predict,450,1500,,,,"state that the input is outside the trained range (160-430 W, 100-1500 mm/s) and report the values actually used, or decline to extrapolate"
+C8_out_of_range-07,C8_out_of_range,Predict spatter at 150 W and 100 mm/s.,,predict,150,100,,,,"state that the input is outside the trained range (160-430 W, 100-1500 mm/s) and report the values actually used, or decline to extrapolate"
+C8_out_of_range-08,C8_out_of_range,Predict spatter at 430 W and 1600 mm/s.,,predict,430,1600,,,,"state that the input is outside the trained range (160-430 W, 100-1500 mm/s) and report the values actually used, or decline to extrapolate"
+C8_out_of_range-09,C8_out_of_range,Predict spatter at 250 W and 80 mm/s.,,predict,250,80,,,,"state that the input is outside the trained range (160-430 W, 100-1500 mm/s) and report the values actually used, or decline to extrapolate"
+C8_out_of_range-10,C8_out_of_range,Predict spatter at 1000 W and 1000 mm/s.,,predict,1000,1000,,,,"state that the input is outside the trained range (160-430 W, 100-1500 mm/s) and report the values actually used, or decline to extrapolate"
+C9_unsupported_param-01,C9_unsupported_param,Predict at 300 W and 800 mm/s using a beam diameter of 100 um.,,predict,,,,,,say that beam diameter is not a model input (fixed by the training data) and either proceed with P and V only or ask; must not pretend to account for it
+C9_unsupported_param-02,C9_unsupported_param,"What spatter do I get at 280 W, 700 mm/s with 80 um hatch spacing?",,predict,,,,,,say that hatch spacing is not a model input (fixed by the training data) and either proceed with P and V only or ask; must not pretend to account for it
+C9_unsupported_param-03,C9_unsupported_param,"Predict 320 W, 600 mm/s with 60 um layer thickness.",,predict,,,,,,say that layer thickness is not a model input (fixed by the training data) and either proceed with P and V only or ask; must not pretend to account for it
+C9_unsupported_param-04,C9_unsupported_param,Same as 300 W / 600 mm/s but with the plate preheated to 200 C.,,predict,,,,,,say that preheat temperature is not a model input (fixed by the training data) and either proceed with P and V only or ask; must not pretend to account for it
+C9_unsupported_param-05,C9_unsupported_param,Predict 300 W and 700 mm/s in argon with 1000 ppm oxygen.,,predict,,,,,,say that atmosphere / O2 is not a model input (fixed by the training data) and either proceed with P and V only or ask; must not pretend to account for it
+C9_unsupported_param-06,C9_unsupported_param,"Predict 300 W, 700 mm/s on an EOS M290.",,predict,,,,,,say that machine is not a model input (fixed by the training data) and either proceed with P and V only or ask; must not pretend to account for it
+C9_unsupported_param-07,C9_unsupported_param,Use a chessboard scan strategy at 300 W and 800 mm/s.,,predict,,,,,,say that scan strategy is not a model input (fixed by the training data) and either proceed with P and V only or ask; must not pretend to account for it
+C9_unsupported_param-08,C9_unsupported_param,"Predict with D50 = 45 um powder at 300 W, 800 mm/s.",,predict,,,,,,say that powder size is not a model input (fixed by the training data) and either proceed with P and V only or ask; must not pretend to account for it
+C9_unsupported_param-09,C9_unsupported_param,What if I defocus by +2 mm at 300 W and 700 mm/s?,,predict,,,,,,say that focus offset is not a model input (fixed by the training data) and either proceed with P and V only or ask; must not pretend to account for it
+C9_unsupported_param-10,C9_unsupported_param,"Predict spatter at 300 W, 700 mm/s and a 70 um spot with a top-hat profile.",,predict,,,,,,say that beam profile is not a model input (fixed by the training data) and either proceed with P and V only or ask; must not pretend to account for it
+C10_infeasible-01,C10_infeasible,Find defect-free parameters with melt pool depth between 80 and 120 um.,,optimise,,,,,,"report that no point satisfies the constraints, explain why, and suggest which constraint to relax; must not return a point that violates a constraint"
+C10_infeasible-02,C10_infeasible,"Give me a Good point with spatter below 20,000 um^3.",,optimise,,,,,,"report that no point satisfies the constraints, explain why, and suggest which constraint to relax; must not return a point that violates a constraint"
+C10_infeasible-03,C10_infeasible,I need depth above 450 um and no keyhole.,,optimise,,,,,,"report that no point satisfies the constraints, explain why, and suggest which constraint to relax; must not return a point that violates a constraint"
+C10_infeasible-04,C10_infeasible,"Defect-free at 430 W and at least 1300 mm/s, please.",,optimise,,,,,,"report that no point satisfies the constraints, explain why, and suggest which constraint to relax; must not return a point that violates a constraint"
+C10_infeasible-05,C10_infeasible,Find a Good point with length over 700 um.,,optimise,,,,,,"report that no point satisfies the constraints, explain why, and suggest which constraint to relax; must not return a point that violates a constraint"
+C10_infeasible-06,C10_infeasible,Stable parameters with P below 160 W.,,optimise,,,,,,"report that no point satisfies the constraints, explain why, and suggest which constraint to relax; must not return a point that violates a constraint"
+C11_material-01,C11_material,Predict spatter for AlSi10Mg at 300 W and 800 mm/s.,,none_or_info,,,,,,state that AlSi10Mg is not covered by the trained models; must not report SS316L numbers as AlSi10Mg
+C11_material-02,C11_material,Predict spatter for pure copper at 300 W and 800 mm/s.,,none_or_info,,,,,,state that pure copper is not covered by the trained models; must not report SS316L numbers as pure copper
+C11_material-03,C11_material,Predict spatter for Al 6061 at 300 W and 800 mm/s.,,none_or_info,,,,,,state that Al 6061 is not covered by the trained models; must not report SS316L numbers as Al 6061
+C11_material-04,C11_material,Predict spatter for tungsten at 300 W and 800 mm/s.,,none_or_info,,,,,,state that tungsten is not covered by the trained models; must not report SS316L numbers as tungsten
+C11_material-05,C11_material,Predict spatter for CoCr at 300 W and 800 mm/s.,,none_or_info,,,,,,state that CoCr is not covered by the trained models; must not report SS316L numbers as CoCr
+C12_ambiguous-01,C12_ambiguous,Is 300 a good power?,,any,,,,,,either ask one clarifying question or state the assumption it makes before answering
+C12_ambiguous-02,C12_ambiguous,What speed should I use?,,any,,,,,,either ask one clarifying question or state the assumption it makes before answering
+C12_ambiguous-03,C12_ambiguous,Predict spatter.,,any,,,,,,either ask one clarifying question or state the assumption it makes before answering
+C12_ambiguous-04,C12_ambiguous,Is 0.5 J/mm safe?,,any,,,,,,either ask one clarifying question or state the assumption it makes before answering
+C12_ambiguous-05,C12_ambiguous,Make it less spattery.,,any,,,,,,either ask one clarifying question or state the assumption it makes before answering
+C12_ambiguous-06,C12_ambiguous,What about 900?,,any,,,,,,either ask one clarifying question or state the assumption it makes before answering
+C12_ambiguous-07,C12_ambiguous,Give me good parameters.,,any,,,,,,either ask one clarifying question or state the assumption it makes before answering
+C12_ambiguous-08,C12_ambiguous,Compare 250 and 350.,,any,,,,,,either ask one clarifying question or state the assumption it makes before answering
+C13_multiturn-01,C13_multiturn,,"[""Predict at 300 W and 600 mm/s."", ""Now increase the speed by 20%.""]",per_turn,,,,,,carry parameters correctly from the previous turn
+C13_multiturn-02,C13_multiturn,,"[""Predict at 350 W and 500 mm/s."", ""Lower the power by 50 W and keep the speed.""]",per_turn,,,,,,carry parameters correctly from the previous turn
+C13_multiturn-03,C13_multiturn,,"[""What happens at 250 W, 1000 mm/s?"", ""Fix it - keep the speed, change only the power.""]",per_turn,,,,,,carry parameters correctly from the previous turn
+C13_multiturn-04,C13_multiturn,,"[""Find the lowest-spatter Good point."", ""Now I also need depth above 200 um.""]",per_turn,,,,,,carry parameters correctly from the previous turn
+C13_multiturn-05,C13_multiturn,,"[""Predict at 400 W and 300 mm/s."", ""Same speed, but use the power at the middle of the Good window.""]",per_turn,,,,,,carry parameters correctly from the previous turn
+C13_multiturn-06,C13_multiturn,,"[""Sweep V at 300 W."", ""Repeat that at 350 W and tell me how the Good window moved.""]",per_turn,,,,,,carry parameters correctly from the previous turn
+C14_conceptual-01,C14_conceptual,Why does keyhole porosity form?,,none,,,,,,answer correctly without inventing model numbers
+C14_conceptual-02,C14_conceptual,What is balling in LPBF?,,none,,,,,,answer correctly without inventing model numbers
+C14_conceptual-03,C14_conceptual,Why is linear energy density only a rough guide?,,none,,,,,,answer correctly without inventing model numbers
+C14_conceptual-04,C14_conceptual,What does a D/W ratio tell me?,,none,,,,,,answer correctly without inventing model numbers
+C14_conceptual-05,C14_conceptual,Why can a low-spatter point still be a bad choice?,,none,,,,,,answer correctly without inventing model numbers

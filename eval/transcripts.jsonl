@@ -1,0 +1,15 @@
+{"id": "T_keyhole", "category": "T_transcript", "prompt": "Predict at 400 W and 300 mm/s."}
+{"id": "T_good", "category": "T_transcript", "prompt": "Predict at 320 W and 600 mm/s."}
+{"id": "T_balling", "category": "T_transcript", "prompt": "Predict at 300 W and 800 mm/s."}
+{"id": "T_lof", "category": "T_transcript", "prompt": "Predict at 300 W and 1200 mm/s."}
+{"id": "T_unit1", "category": "T_transcript", "prompt": "what should I expect from operating at 350 W and 1 m/s"}
+{"id": "T_unit2", "category": "T_transcript", "prompt": "predict at 295 and 750"}
+{"id": "T_unit3", "category": "T_transcript", "prompt": "Use P = 150 + 0.5\u00d7500 and V = 2\u00d7400"}
+{"id": "T_unit4", "category": "T_transcript", "prompt": "Hit it with 350-ish watts, speed a bit under a meter per second"}
+{"id": "T_beam", "category": "T_transcript", "prompt": "Predict spatter at 300 W and 800 mm/s using beam diameter of 100 micron."}
+{"id": "T_line_P300", "category": "T_transcript", "prompt": "At P = 300 W, sweep the scan speed from 100 to 1500 mm/s. Where are the regime boundaries, and where is spatter lowest in the stable window?"}
+{"id": "T_line_V600", "category": "T_transcript", "prompt": "At V = 600 mm/s, sweep the power from 160 to 430 W. Where are the regime boundaries, and where is spatter lowest in the stable window?"}
+{"id": "T_grid", "category": "T_transcript", "prompt": "Run a 15\u00d715 grid scan over P = 200\u2013400 W and V = 300\u20131000 mm/s and list the Good points with spatter below 100,000 \u00b5m\u00b3."}
+{"id": "T_Q2", "category": "T_transcript", "prompt": "Find defect-free parameters with melt pool depth between 120 and 180 \u00b5m and spatter below 90,000 \u00b5m\u00b3. Search a 30\u00d730 grid."}
+{"id": "T_Q3", "category": "T_transcript", "prompt": "Find the minimum-spatter defect-free parameters with linear energy density between 0.4 and 0.6 J/mm. Search a 30\u00d730 grid."}
+{"id": "T_Q4", "category": "T_transcript", "prompt": "Find defect-free parameters with depth 150\u2013250 \u00b5m, length 350\u2013500 \u00b5m and spatter below 120,000 \u00b5m\u00b3. Search a 30\u00d730 grid."}
