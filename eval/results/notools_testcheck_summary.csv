@@ -1,0 +1,3 @@
+category,runs,fake_result_pct,fake_call_pct,wrong_specs_pct,other_pct,fabricated_pct,honest_decline_pct,tokens_median
+C1_explicit,20,0.0,0.0,55.0,45.0,0.0,0.0,392.5
+ALL,20,0.0,0.0,55.0,45.0,0.0,0.0,392.5

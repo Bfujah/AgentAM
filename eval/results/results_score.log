@@ -1,0 +1,42 @@
+Loaded Depth model from /sessions/rcw-01wg6veprackzp4rd3rqwunz/mnt/spatter_mcp/Depth_poly_model.pkl
+Loaded Width model from /sessions/rcw-01wg6veprackzp4rd3rqwunz/mnt/spatter_mcp/Width_poly_model.pkl
+Loaded Length model from /sessions/rcw-01wg6veprackzp4rd3rqwunz/mnt/spatter_mcp/Length_poly_model.pkl
+Loaded Area model from /sessions/rcw-01wg6veprackzp4rd3rqwunz/mnt/spatter_mcp/Area_poly_model.pkl
+Loaded Volume model from /sessions/rcw-01wg6veprackzp4rd3rqwunz/mnt/spatter_mcp/Volume_poly_model.pkl
+Loaded Spatter model from /sessions/rcw-01wg6veprackzp4rd3rqwunz/mnt/spatter_mcp/Spatter_poly_model.pkl
+
+
+╭──────────────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│                                                                              │
+│                         ▄▀▀ ▄▀█ █▀▀ ▀█▀ █▀▄▀█ █▀▀ █▀█                        │
+│                         █▀  █▀█ ▄▄█  █  █ ▀ █ █▄▄ █▀▀                        │
+│                                                                              │
+│                                                                              │
+│                                                                              │
+│                                FastMCP 4.1.0                                 │
+│                            https://gofastmcp.com                             │
+│                                                                              │
+│                  🖥  Server:      spatter_mcp, 4.1.0                          │
+│                  🚀 Deploy free: https://horizon.prefect.io                  │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+
+[10/19/26 09:42:32] INFO     Starting MCP server 'spatter_mcp'  transport.py:241
+                             with transport 'stdio'                             
+{'category': 'C1_explicit', 'runs': 100, 'tool_ok': 100.0, 'param_ok': 100.0, 'spatter_faithful': 100.0, 'defect_faithful': 100.0, 'behaviour_ok': None, 'constraints_ok': None, 'no_violating_point': None, 'opt_gap_median_pct': None, 'consistency': 100.0, 'latency_median_s': 6.823497176170349, 'tokens_median': 11733.5}
+{'category': 'C2_units', 'runs': 75, 'tool_ok': 100.0, 'param_ok': 100.0, 'spatter_faithful': 100.0, 'defect_faithful': 100.0, 'behaviour_ok': None, 'constraints_ok': None, 'no_violating_point': None, 'opt_gap_median_pct': None, 'consistency': 100.0, 'latency_median_s': 9.055420160293579, 'tokens_median': 11978}
+{'category': 'C3_implicit', 'runs': 50, 'tool_ok': 100.0, 'param_ok': 100.0, 'spatter_faithful': 100.0, 'defect_faithful': 100.0, 'behaviour_ok': None, 'constraints_ok': None, 'no_violating_point': None, 'opt_gap_median_pct': None, 'consistency': 100.0, 'latency_median_s': 8.200659155845642, 'tokens_median': 11876.0}
+{'category': 'C4_arithmetic', 'runs': 50, 'tool_ok': 98.0, 'param_ok': 98.0, 'spatter_faithful': 100.0, 'defect_faithful': 100.0, 'behaviour_ok': None, 'constraints_ok': None, 'no_violating_point': None, 'opt_gap_median_pct': None, 'consistency': 100.0, 'latency_median_s': 8.705496191978455, 'tokens_median': 11992.5}
+{'category': 'C5_colloquial', 'runs': 50, 'tool_ok': 100.0, 'param_ok': 92.0, 'spatter_faithful': 100.0, 'defect_faithful': 100.0, 'behaviour_ok': None, 'constraints_ok': None, 'no_violating_point': None, 'opt_gap_median_pct': None, 'consistency': 70.0, 'latency_median_s': 9.326753735542297, 'tokens_median': 11913.5}
+{'category': 'C6_gridscan', 'runs': 25, 'tool_ok': 100.0, 'param_ok': None, 'spatter_faithful': None, 'defect_faithful': None, 'behaviour_ok': None, 'constraints_ok': None, 'no_violating_point': None, 'opt_gap_median_pct': None, 'consistency': None, 'latency_median_s': 24.783732652664185, 'tokens_median': 48365}
+{'category': 'C6_linescan', 'runs': 50, 'tool_ok': 100.0, 'param_ok': None, 'spatter_faithful': None, 'defect_faithful': None, 'behaviour_ok': None, 'constraints_ok': None, 'no_violating_point': None, 'opt_gap_median_pct': None, 'consistency': None, 'latency_median_s': 11.695022106170654, 'tokens_median': 14053.0}
+{'category': 'C7_optimise', 'runs': 75, 'tool_ok': 100.0, 'param_ok': None, 'spatter_faithful': None, 'defect_faithful': None, 'behaviour_ok': 100.0, 'constraints_ok': 100.0, 'no_violating_point': None, 'opt_gap_median_pct': 0.9909383970015303, 'consistency': None, 'latency_median_s': 13.113066911697388, 'tokens_median': 18565}
+{'category': 'C8_out_of_range', 'runs': 50, 'tool_ok': 100.0, 'param_ok': None, 'spatter_faithful': 100.0, 'defect_faithful': None, 'behaviour_ok': 100.0, 'constraints_ok': None, 'no_violating_point': None, 'opt_gap_median_pct': None, 'consistency': 100.0, 'latency_median_s': 5.8436620235443115, 'tokens_median': 11378.5}
+{'category': 'C9_unsupported_param', 'runs': 50, 'tool_ok': 100.0, 'param_ok': None, 'spatter_faithful': 100.0, 'defect_faithful': 100.0, 'behaviour_ok': 80.0, 'constraints_ok': None, 'no_violating_point': None, 'opt_gap_median_pct': None, 'consistency': 100.0, 'latency_median_s': 11.139333724975586, 'tokens_median': 12187.5}
+{'category': 'C10_infeasible', 'runs': 30, 'tool_ok': 90.0, 'param_ok': None, 'spatter_faithful': None, 'defect_faithful': None, 'behaviour_ok': 80.0, 'constraints_ok': None, 'no_violating_point': 30.0, 'opt_gap_median_pct': None, 'consistency': None, 'latency_median_s': 26.552913784980774, 'tokens_median': 31759.0}
+{'category': 'C11_material', 'runs': 25, 'tool_ok': None, 'param_ok': None, 'spatter_faithful': None, 'defect_faithful': None, 'behaviour_ok': 100.0, 'constraints_ok': None, 'no_violating_point': None, 'opt_gap_median_pct': None, 'consistency': None, 'latency_median_s': 6.001955509185791, 'tokens_median': 11228}
+{'category': 'C12_ambiguous', 'runs': 40, 'tool_ok': None, 'param_ok': None, 'spatter_faithful': None, 'defect_faithful': None, 'behaviour_ok': None, 'constraints_ok': None, 'no_violating_point': None, 'opt_gap_median_pct': None, 'consistency': None, 'latency_median_s': 9.760879516601562, 'tokens_median': 11745.0}
+{'category': 'C13_multiturn', 'runs': 30, 'tool_ok': None, 'param_ok': None, 'spatter_faithful': None, 'defect_faithful': None, 'behaviour_ok': None, 'constraints_ok': None, 'no_violating_point': None, 'opt_gap_median_pct': None, 'consistency': None, 'latency_median_s': 20.46749711036682, 'tokens_median': 31653.5}
+{'category': 'C14_conceptual', 'runs': 25, 'tool_ok': 68.0, 'param_ok': None, 'spatter_faithful': None, 'defect_faithful': None, 'behaviour_ok': None, 'constraints_ok': None, 'no_violating_point': None, 'opt_gap_median_pct': None, 'consistency': None, 'latency_median_s': 11.822881937026978, 'tokens_median': 5992}

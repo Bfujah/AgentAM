@@ -1,0 +1,103 @@
+full-data test accuracy: mean 93.7%  sd 2.3%  (n_avail 181)
+
+mean test accuracy (%) [95% CI half-width] at n:
+  n= 15  random= 75.0[2.9]  space= 75.0[2.9]  qbc= 75.0[2.9]  margin= 75.0[2.9]  exploit= 75.0[2.9]  hybrid= 75.0[2.9]
+  n= 25  random= 87.3[1.7]  space= 91.3[0.9]  qbc= 87.1[1.7]  margin= 87.5[1.8]  exploit= 88.2[1.3]  hybrid= 89.6[1.3]
+  n= 35  random= 90.7[1.0]  space= 92.6[0.8]  qbc= 92.0[0.9]  margin= 90.8[1.2]  exploit= 90.8[0.8]  hybrid= 92.7[0.8]
+  n= 50  random= 92.7[0.8]  space= 92.6[0.7]  qbc= 93.5[0.6]  margin= 93.0[0.7]  exploit= 92.0[0.9]  hybrid= 93.2[0.7]
+  n= 75  random= 93.1[0.8]  space= 93.1[0.7]  qbc= 94.1[0.6]  margin= 94.0[0.6]  exploit= 92.5[0.6]  hybrid= 93.4[0.6]
+  n=100  random= 93.3[0.6]  space= 93.4[0.7]  qbc= 93.9[0.6]  margin= 94.4[0.6]  exploit= 91.7[0.7]  hybrid= 93.4[0.6]
+  n=125  random= 93.4[0.7]  space= 93.5[0.6]  qbc= 93.8[0.6]  margin= 94.0[0.6]  exploit= 92.7[0.7]  hybrid= 93.3[0.6]
+  n=150  random= 93.2[0.7]  space= 93.6[0.7]  qbc= 93.6[0.7]  margin= 93.4[0.7]  exploit= 93.0[0.7]  hybrid= 93.3[0.6]
+
+simulations to reach (full-data accuracy - 3 pts) and stay there, per repeat:
+  random   median   55.0  mean   60.9  IQR 40-80  reached 49/50
+  space    median   35.0  mean   47.9  IQR 25-65  reached 50/50
+           vs random: median saving 15 sims (36%), wins 32/49, Wilcoxon p=0.012
+  qbc      median   35.0  mean   38.8  IQR 30-45  reached 49/50
+           vs random: median saving 15 sims (33%), wins 34/48, Wilcoxon p=2.7e-05
+  margin   median   40.0  mean   47.8  IQR 30-55  reached 46/50
+           vs random: median saving 10 sims (20%), wins 28/46, Wilcoxon p=0.018
+  exploit  median   70.0  mean   78.8  IQR 40-120  reached 44/50
+           vs random: median saving -15 sims (-30%), wins 16/43, Wilcoxon p=0.032
+  hybrid   median   30.0  mean   45.2  IQR 25-55  reached 50/50
+           vs random: median saving 15 sims (45%), wins 34/49, Wilcoxon p=0.0021
+
+simulations to reach (full-data accuracy - 2 pts) and stay there, per repeat:
+  random   median   67.5  mean   82.0  IQR 44-126  reached 44/50
+  space    median   60.0  mean   69.9  IQR 42-95  reached 47/50
+           vs random: median saving 12 sims (8%), wins 24/42, Wilcoxon p=0.094
+  qbc      median   40.0  mean   52.0  IQR 35-60  reached 45/50
+           vs random: median saving 20 sims (33%), wins 28/41, Wilcoxon p=0.001
+  margin   median   55.0  mean   66.1  IQR 35-99  reached 42/50
+           vs random: median saving 8 sims (8%), wins 20/38, Wilcoxon p=0.081
+  exploit  median  105.0  mean  102.0  IQR 75-145  reached 37/50
+           vs random: median saving -25 sims (-91%), wins 8/33, Wilcoxon p=0.015
+  hybrid   median   55.0  mean   71.1  IQR 30-100  reached 45/50
+           vs random: median saving 8 sims (8%), wins 24/42, Wilcoxon p=0.21
+
+simulations to reach (full-data accuracy - 1 pts) and stay there, per repeat:
+  random   median  105.0  mean   96.0  IQR 71-128  reached 26/50
+  space    median  110.0  mean   97.0  IQR 70-125  reached 33/50
+           vs random: median saving 20 sims (5%), wins 10/16, Wilcoxon p=0.43
+  qbc      median   60.0  mean   70.0  IQR 36-94  reached 34/50
+           vs random: median saving 35 sims (53%), wins 17/22, Wilcoxon p=0.0036
+  margin   median   80.0  mean   85.7  IQR 46-128  reached 30/50
+           vs random: median saving 20 sims (34%), wins 13/20, Wilcoxon p=0.089
+  exploit  median  115.0  mean  117.4  IQR 105-135  reached 25/50
+           vs random: median saving -40 sims (-30%), wins 3/14, Wilcoxon p=0.033
+  hybrid   median   85.0  mean   78.7  IQR 42-102  reached 27/50
+           vs random: median saving 18 sims (27%), wins 13/20, Wilcoxon p=0.038
+
+mean accuracy over n = 15..100 (area under the learning curve), paired vs random:
+  random   90.7%
+  space    91.7%  diff +1.0 pts  wins 38/50  p=8.7e-05
+  qbc      91.4%  diff +0.8 pts  wins 32/50  p=0.011
+  margin   91.2%  diff +0.6 pts  wins 33/50  p=0.014
+  exploit  90.3%  diff -0.4 pts  wins 20/50  p=0.11
+  hybrid   91.5%  diff +0.8 pts  wins 37/50  p=0.00028
+
+optimum finding: regret of best acquired Good simulation vs best Good in pool (%), median:
+  n= 25  random=29.4  space=40.4  qbc=40.4  margin=29.4  exploit=11.6  hybrid=24.3
+  n= 50  random=12.7  space=12.7  qbc=16.8  margin=16.8  exploit=0.0  hybrid=2.0
+  n= 75  random=0.0  space=4.6  qbc=12.7  margin=16.8  exploit=0.0  hybrid=0.0
+  n=100  random=0.0  space=0.0  qbc=2.0  margin=16.8  exploit=0.0  hybrid=0.0
+
+share of acquired runs within 10% of a threshold, n=100:
+  random=50%  space=50%  qbc=66%  margin=70%  exploit=53%  hybrid=57%
+1. paired differences in test accuracy (pts), mean [95% CI], Wilcoxon p
+  n= 35 random   vs space  -1.9 [1.0] p=0.0018   vs full data  -3.0 [1.0] p=3.1e-06
+  n= 35 qbc      vs space  -0.6 [1.1] p=0.36   vs full data  -1.7 [0.9] p=0.0013
+  n= 35 margin   vs space  -1.8 [1.3] p=0.02   vs full data  -3.0 [1.3] p=2.9e-05
+  n= 35 exploit  vs space  -1.8 [0.8] p=0.00016   vs full data  -2.9 [0.7] p=6.2e-08
+  n= 35 hybrid   vs space  +0.1 [0.8] p=0.61   vs full data  -1.0 [0.8] p=0.028
+  n= 50 random   vs space  +0.1 [0.6] p=0.79   vs full data  -1.0 [0.6] p=0.0027
+  n= 50 qbc      vs space  +1.0 [0.6] p=0.0013   vs full data  -0.2 [0.4] p=0.52
+  n= 50 margin   vs space  +0.4 [0.7] p=0.14   vs full data  -0.7 [0.7] p=0.068
+  n= 50 exploit  vs space  -0.6 [1.0] p=0.45   vs full data  -1.7 [0.9] p=0.00037
+  n= 50 hybrid   vs space  +0.7 [0.7] p=0.074   vs full data  -0.5 [0.6] p=0.18
+  n= 75 random   vs space  +0.0 [0.6] p=0.89   vs full data  -0.6 [0.6] p=0.068
+  n= 75 qbc      vs space  +1.0 [0.5] p=0.00013   vs full data  +0.4 [0.4] p=0.052
+  n= 75 margin   vs space  +0.9 [0.7] p=0.006   vs full data  +0.3 [0.6] p=0.29
+  n= 75 exploit  vs space  -0.6 [0.7] p=0.15   vs full data  -1.2 [0.6] p=0.00023
+  n= 75 hybrid   vs space  +0.3 [0.6] p=0.39   vs full data  -0.3 [0.4] p=0.3
+  n=100 random   vs space  -0.1 [0.4] p=0.51   vs full data  -0.4 [0.4] p=0.042
+  n=100 qbc      vs space  +0.5 [0.4] p=0.038   vs full data  +0.2 [0.4] p=0.37
+  n=100 margin   vs space  +1.0 [0.5] p=0.0013   vs full data  +0.7 [0.5] p=0.0056
+  n=100 exploit  vs space  -1.6 [0.6] p=5.8e-06   vs full data  -2.0 [0.6] p=5.6e-07
+  n=100 hybrid   vs space  +0.0 [0.4] p=0.93   vs full data  -0.3 [0.3] p=0.17
+
+2. fixed coarse-grid designs (test accuracy, same splits)
+  P all x V every 2nd          n~ 94  acc  92.9%   at n=95: random=93.4  space=93.4  qbc=94.1  margin=94.3  exploit=91.8  hybrid=93.5   qbc-grid +1.2 pts p=8.9e-05
+  P every 2nd x V every 2nd    n~ 47  acc  91.9%   at n=45: random=91.9  space=92.6  qbc=93.3  margin=92.6  exploit=91.2  hybrid=92.9   qbc-grid +1.4 pts p=0.0045
+  P every 2nd x V every 3rd    n~ 30  acc  92.4%   at n=30: random=89.0  space=92.2  qbc=91.0  margin=89.0  exploit=89.6  hybrid=92.1   qbc-grid -1.4 pts p=0.088
+  P every 3rd x V every 3rd    n~ 22  acc  88.9%   at n=20: random=84.0  space=89.3  qbc=81.9  margin=83.9  exploit=84.9  hybrid=85.0   qbc-grid -7.0 pts p=1e-05
+  P every 3rd x V every 4th    n~ 19  acc  87.9%   at n=20: random=84.0  space=89.3  qbc=81.9  margin=83.9  exploit=84.9  hybrid=85.0   qbc-grid -6.0 pts p=7.4e-05
+
+3. joint goal: map within one test error of full data AND best Good run within 5% of pool optimum
+  random   median   95.0  IQR 60-135  reached 41/50
+  space    median   85.0  IQR 65-115  reached 47/50
+  qbc      median   87.5  IQR 50-124  reached 42/50
+  margin   median  115.0  IQR 98-122  reached 39/50
+  exploit  median  105.0  IQR 75-145  reached 37/50
+  hybrid   median   65.0  IQR 45-100  reached 45/50
