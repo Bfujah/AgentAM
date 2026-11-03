@@ -1,0 +1,32 @@
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\renewcommand{\ttdefault}{pcr}
+\usepackage{tikz}
+\usepackage{siunitx}
+\usepackage{amssymb}
+\sisetup{group-separator={,},group-minimum-digits=4}
+\usetikzlibrary{positioning,arrows.meta,calc,fit,backgrounds,shapes.misc}
+% palette shared with make_figs.py
+\definecolor{ink}{HTML}{0B0B0B}
+\definecolor{ink2}{HTML}{52514E}
+\definecolor{muted}{HTML}{8A8984}
+\definecolor{rule}{HTML}{E6E5E1}
+\definecolor{paper}{HTML}{F7F6F3}
+\definecolor{good}{HTML}{1BAF7A}
+\definecolor{kh}{HTML}{E34948}
+\definecolor{ball}{HTML}{EDA100}
+\definecolor{lof}{HTML}{2A78D6}
+\definecolor{agent}{HTML}{3D3A6B}
+\definecolor{agentbg}{HTML}{EEEDF6}
+\definecolor{serverbg}{HTML}{EAF3EE}
+\tikzset{
+  >={Stealth[length=2.2mm,width=1.6mm]},
+  box/.style={draw=ink2, line width=0.5pt, rounded corners=2pt, fill=white, align=center, inner sep=3pt, font=\footnotesize},
+  chip/.style={draw=ink2, line width=0.4pt, rounded corners=1.5pt, fill=white, font=\scriptsize\ttfamily, inner xsep=3pt, inner ysep=2pt, minimum height=4.2mm},
+  region/.style={draw=muted, line width=0.5pt, dashed, rounded corners=4pt, inner sep=6pt},
+  lab/.style={font=\scriptsize, text=ink2, align=center},
+  flow/.style={->, line width=0.6pt, draw=ink2},
+  ret/.style={->, line width=0.6pt, draw=ink2, densely dashed},
+  bubble/.style={draw=ink2, line width=0.5pt, rounded corners=6pt, fill=paper, align=left, inner sep=4pt, font=\footnotesize},
+  num/.style={circle, fill=ink, text=white, font=\tiny\bfseries, inner sep=0.8pt, minimum size=3.4mm},
+}
