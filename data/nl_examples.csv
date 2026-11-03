@@ -1,0 +1,5 @@
+id,prompt,P_parsed,V_parsed,J,spatter,depth,width,length,defect
+U1,what should I expect from operating at 350 W and 1 m/s,350,1000,0.35,226437,133,189,601,Lack of Fusion
+U2,predict at 295 and 750,295,750,0.393,144675,153,182,468,Balling
+U3,Use P = 150 + 0.5x500 and V = 2x400.,400,800,0.50,180078,216,205,514,Balling
+U4,"Hit it with 350-ish watts, speed a bit under a meter per second.",350,950,0.37,230000,142,190,581,Balling
